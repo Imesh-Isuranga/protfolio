@@ -38,6 +38,7 @@ body{
     font-weight: bold;
     color: white;
     text-align: center;
+    font-family: 'Encode Sans', sans-serif;
 }
 
 .top-text{
@@ -95,11 +96,41 @@ body{
 /*aboutMe------------------------------------------------------------------------*/
 
 .aboutMe{
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     width: 100vw;
-    border: 1px solid red;
+    padding: 30px;
 }
 
+.aboutMe-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.aboutMe-left-img{
+    background-image: url("assets/about Me-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+    width: 100%;
+}
+
+.aboutMe-left-text{
+    text-align: left;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Encode Sans', sans-serif;
+}
+
+.aboutMe-right{
+    height: auto;
+    font-size: 20px;
+    padding-top: 180px;
+}
 
 
 @media (max-width: 768px) {
@@ -162,4 +193,37 @@ body{
             opacity: 0;
         }
     }
+
+    /*AboutMe--------------------------------------------*/
+    .aboutMe{
+        height: 100vh;
+        width: 100vw;
+        padding: 10px;
+    }
+
+
+
+    .aboutMe-left-text{
+        text-align: left;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'Encode Sans', sans-serif;
+    }
+
+    .aboutMe-right{
+        height: auto;
+        font-size: 15px;
+        padding-top: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .aboutMe-left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
 }
