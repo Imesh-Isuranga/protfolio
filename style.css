@@ -5,62 +5,161 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    padding: 0px 30px;
+}
+/*TOP BAR---------------------------------------------------------------------------*/
+.top-bar{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
 }
 
-.top-bar{
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap: 50px 30px;
-    background-image: url("assets/top-bg.jpg");
-    background-position: center;
+.top-left{
+    height: 100%;
+    background-image: url("assets/Imesh_Isuranga-removebg.png");
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
 }
 
-.top-bar-left{
-    overflow: hidden;
-}
-
-.top-bar-left-img{
-    width: 100%;
+.top-right{
     height: 100%;
-    border-radius: 100%;
-    object-fit: cover;
-    opacity: 0.9;
-}
-
-.top-bar-right{
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-.top-bar-right p{
-    font-size: 100px;
-    line-height: 80px;
+.top-right .top-text p{
+    font-size: 90px;
+    line-height: 90px;
     padding-bottom: 15px;
     font-weight: bold;
     color: white;
+    text-align: center;
 }
 
-@media (max-width:991px){
-    .top-bar-right p{
-        padding-left: 0;
+.top-text{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-scrolBtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#scrollBtn{
+    height: 120px;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 3em;
+}
+
+#scrollBtn:before{
+    content: "";
+    height: 1.2em;
+    width: 1.2em;
+    background-color: white;
+    border-radius: 50%;
+    animation: move-down 2s infinite;
+}
+
+@keyframes move-down {
+    80%{
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateY(3.5em);
+        opacity: 0;
     }
 }
+
+.top-scrolBtn p{
+    text-align: left;
+    font-size: 20px;
+    color: white;
+}
+
+
+
+/*aboutMe------------------------------------------------------------------------*/
+
+.aboutMe{
+    height: 100vh;
+    width: 100vw;
+    border: 1px solid red;
+}
+
+
 
 @media (max-width: 768px) {
+    /*TOP BAR---------------------------------------------------------------------------*/
     .top-bar{
-        width: 90%;
-        grid-template-columns: 1fr;
+        padding-top: 20px;
     }
-    .top-bar-right p{
-        font-size: 60px;
-        line-height: 50px;
+
+    .top-left{
+        height: 40vh;
+        background-image: url("assets/Imesh_Isuranga-removebg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 100%;
+    }
+
+    .top-right{
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .top-right .top-text p{
+        font-size: 50px;
+        line-height: 60px;
+        padding-bottom: 15px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+    }
+
+    #scrollBtn{
+        height: 80px;
+        width: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid white;
+        border-radius: 3em;
+    }
+
+    #scrollBtn:before{
+        content: "";
+        height: 1.0em;
+        width: 1.0em;
+        background-color: white;
+        border-radius: 50%;
+        animation: move-down 2s infinite;
+    }
+
+    @keyframes move-down {
+        80%{
+            opacity: 0.5;
+        }
+        100%{
+            transform: translateY(2em);
+            opacity: 0;
+        }
     }
 }
-
-
-
