@@ -5,14 +5,22 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    background: rgb(64,18,18);
+    background: radial-gradient(circle, rgba(64,18,18,1) 0%, rgba(0,0,0,1) 100%);
 }
-/*TOP BAR---------------------------------------------------------------------------*/
+
+.context{
+    color: white;
+}
+    /*TOP BAR---------------------------------------------------------------------------*/
 .top-bar{
     height: 100vh;
     width: 100vw;
     background-color: black;
     align-items: center;
     justify-content: center;
+    background: rgb(64,18,18);
+    background: radial-gradient(circle, rgba(64,18,18,1) 0%, rgba(0,0,0,1) 100%);
 }
 
 .top-left{
@@ -21,6 +29,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    border-radius: 3em;
 }
 
 .top-right{
@@ -100,6 +109,8 @@ body{
     min-height: 100vh;
     width: 100vw;
     padding: 30px;
+    background: rgb(64,18,18);
+    background: radial-gradient(circle, rgba(64,18,18,1) 0%, rgba(0,0,0,1) 100%);
 }
 
 .aboutMe-left{
@@ -117,6 +128,8 @@ body{
     background-size: cover;
     height: 550px;
     width: 100%;
+    border-radius: 3em;
+    border: 1px solid white;
 }
 
 .aboutMe-left-text{
@@ -124,6 +137,7 @@ body{
     font-size: 70px;
     font-weight: bold;
     font-family: 'Encode Sans', sans-serif;
+    margin-bottom: 50px;
 }
 
 .aboutMe-right{
@@ -132,6 +146,143 @@ body{
     padding-top: 180px;
 }
 
+/*Projects---------------------------------------------------------------------------------*/
+
+.projects{
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    padding: 30px;
+    min-height: 100vh;
+    background: rgb(64,18,18);
+    background: radial-gradient(circle, rgba(64,18,18,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.projects-left{
+    width: 100%;
+    height: auto;
+}
+
+.projects-right{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#projectsTitle{
+    text-align: left;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Encode Sans', sans-serif;
+    margin: 0;
+}
+
+#description{
+    height: auto;
+    font-size: 20px;
+    padding-top: 10px;
+    margin: 0;
+}
+
+.preview-projects{
+    width: 100%;
+    padding: 31%;
+    box-shadow: 16px 14px 20px black;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.preview-projects:before{
+    content: "";
+    background-image: conic-gradient(#0984e3 20deg,transparent 300%);
+    width: 180%;
+    height: 40%;
+    position: absolute;
+    animation: rotate 2s linear infinite;
+}
+
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.preview-projects:after{
+    content: "";
+    width: 99%;
+    padding: 30.5%;
+    background-image: url("assets/Box_Imgs/1-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.project-1{
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-1 .common{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 20px;
+    transition: 1s;
+    max-width: 1000px;
+    width: auto;
+}
+
+.text1{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.text2{
+    font-size: 23px;
+}
+
+.proj-1{
+    background: -moz-linear-gradient(90deg, red, white, blue);
+    box-shadow: 0px 0px 5px 0px white;
+}
+.proj-2{
+    background: -moz-linear-gradient(90deg, red, white, blue);
+    box-shadow: 0px 0px 5px 0px white;
+}
+.proj-3{
+    background: -moz-linear-gradient(90deg, red, white, blue);
+    box-shadow: 0px 0px 5px 0px white;
+}
+
+
+.project-1 .common:hover{
+    box-shadow: 0px 0px 20px 1px black;
+    transform: scale(0.95);
+}
+
+/*contact------------------------------------------------------------*/
 
 @media (max-width: 768px) {
     /*TOP BAR---------------------------------------------------------------------------*/
@@ -196,15 +347,13 @@ body{
 
     /*AboutMe--------------------------------------------*/
     .aboutMe{
-        height: 100vh;
+        height: auto;
+        min-height: 100vh;
         width: 100vw;
         padding: 10px;
     }
 
-
-
     .aboutMe-left-text{
-        text-align: left;
         font-size: 40px;
         font-weight: bold;
         font-family: 'Encode Sans', sans-serif;
@@ -216,6 +365,7 @@ body{
         padding-top: 20px;
         margin-right: 10px;
         margin-left: 10px;
+        text-align: center;
     }
 
     .aboutMe-left{
@@ -226,4 +376,131 @@ body{
         height: 100%;
     }
 
+    .aboutMe-left-img{
+        background-image: url("assets/about Me-1.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 350px;
+        width: 100%;
+    }
+
+    /*Projects---------------------------------------------------------------------------------*/
+
+    .projects{
+        width: 100vw;
+        height: auto;
+        min-height: 100vh;
+        padding: 20px;
+        min-height: 100vh;
+    }
+
+    .projects-right{
+        width: 100%;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .projects-left{
+        width: 100%;
+        height: auto;
+        padding-bottom: 100px;
+    }
+
+    #projectsTitle{
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'Encode Sans', sans-serif;
+    }
+
+    #description{
+        height: auto;
+        font-size: 15px;
+        padding-top: 10px;
+    }
+
+    .text1{
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .text2{
+        font-size: 20px;
+    }
+
+    /*contact------------------------------------------------------------*/
+}
+
+
+@media (max-width: 480px) {
+
+    /*TopBar*/
+
+    .top-right .top-text p{
+        font-size: 40px;
+        line-height: 50px;
+        padding-bottom: 15px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        font-family: 'Encode Sans', sans-serif;
+    }
+
+
+    /*aboutMe-----------------------------------------------------------------------*/
+
+    .aboutMe-left-text{
+        text-align: left;
+        font-size: 70px;
+        font-weight: bold;
+        font-family: 'Encode Sans', sans-serif;
+        margin-bottom: 5px;
+    }
+
+    .aboutMe-left-img{
+        background-image: url("assets/about Me-1.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 250px;
+        width: 100%;
+    }
+
+    /*Projects---------------------------------------------------------------------------------*/
+    .projects{
+        width: 100vw;
+        height: auto;
+        min-height: 100vh;
+        min-height: 100vh;
+        padding: 20px;
+    }
+
+    .projects-left{
+        width: 100%;
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    .projects-right{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .text1{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .text2{
+        font-size: 15px;
+    }
+
+    /*contact------------------------------------------------------------*/
 }
