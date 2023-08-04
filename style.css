@@ -14,6 +14,7 @@ body{
 }
     /*TOP BAR---------------------------------------------------------------------------*/
 .top-bar{
+    padding: 20px;
     height: 100vh;
     width: 100vw;
     background-color: black;
@@ -24,12 +25,13 @@ body{
 }
 
 .top-left{
-    height: 100%;
+    height: 90%;
     background-image: url("assets/Imesh_Isuranga-removebg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     border-radius: 3em;
+    border: 1px solid white;
 }
 
 .top-right{
@@ -38,6 +40,12 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.socialMedia{
+    height: 50px;
+    width: 300px;
+    background-color: white;
 }
 
 .top-right .top-text p{
@@ -284,6 +292,111 @@ body{
 
 /*contact------------------------------------------------------------*/
 
+.contact{
+    width: 100vw;
+    height: 100vh;
+    padding:20px;
+    background-image: url("assets/contact-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#contactTitle{
+    text-align: left;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Encode Sans', sans-serif;
+    margin: 0;
+}
+
+.contact-contain{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divc{
+    height: 40%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+.contactCall{
+    background-image: url("assets/Icons/cal.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contactWhatsapp{
+    background-image: url("assets/Icons/whatsapp.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contactEmail{
+    background-image: url("assets/Icons/gmail.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#phone{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: -20px;
+}
+#whatsapp{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: -20px;
+}
+#email{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: -20px;
+}
+
+#phoneNumber{
+    font-size: 22px;
+}
+#whatsappNumber{
+    font-size: 22px;
+}
+#myemail{
+    font-size: 22px;
+}
+
+.txtcontact{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*footer--------------------------------------------------------------------------------------*/
+
+.footer{
+    padding-top: 10px;
+    width: 100vw;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 768px) {
     /*TOP BAR---------------------------------------------------------------------------*/
     .top-bar{
@@ -296,7 +409,8 @@ body{
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        border-radius: 100%;
+        border-radius: 3em;
+        border: 1px solid white;
     }
 
     .top-right{
@@ -391,8 +505,7 @@ body{
         width: 100vw;
         height: auto;
         min-height: 100vh;
-        padding: 20px;
-        min-height: 100vh;
+        padding: 20px;;
     }
 
     .projects-right{
@@ -431,6 +544,31 @@ body{
     }
 
     /*contact------------------------------------------------------------*/
+
+    #contactTitle{
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'Encode Sans', sans-serif;
+    }
+
+    .divc{
+        height: 40%;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .emaildiv{
+        height: 40%;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
 }
 
 
@@ -473,7 +611,6 @@ body{
         width: 100vw;
         height: auto;
         min-height: 100vh;
-        min-height: 100vh;
         padding: 20px;
     }
 
@@ -503,4 +640,25 @@ body{
     }
 
     /*contact------------------------------------------------------------*/
+
+    .divc{
+        height: 40%;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .emaildiv{
+        height: 40%;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+        top: -90px;
+    }
+
 }
