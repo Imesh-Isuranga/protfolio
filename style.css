@@ -473,6 +473,9 @@ body.night{
 .footer1{
     width: 100vw;
     height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: white;
 }
 
@@ -834,6 +837,27 @@ body.night{
 
     /*contact------------------------------------------------------------*/
 
+    .formDiv{
+        height: 90%;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .formTitle{
+        width: auto;
+        height: 90%;
+        font-size: 30px;
+    }
+
+    .form{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
 
 
 }
