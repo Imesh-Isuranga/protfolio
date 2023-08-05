@@ -17,7 +17,6 @@ body{
     padding: 20px;
     height: 100vh;
     width: 100vw;
-    background-color: black;
     align-items: center;
     justify-content: center;
     background: rgb(64,18,18);
@@ -25,7 +24,7 @@ body{
 }
 
 .top-left{
-    height: 90%;
+    height: 60%;
     background-image: url("assets/Imesh_Isuranga-removebg.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -43,9 +42,62 @@ body{
 }
 
 .socialMedia{
-    height: 50px;
-    width: 300px;
-    background-color: white;
+    height: auto;
+    width: 500px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 20px;
+}
+
+.sm{
+    height: 40px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.github{
+    background-image: url("assets/Icons/github-1.png");
+    border: 1px solid white;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.linkdein{
+    background-image: url("assets/Icons/linkedin.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.stackoverflow{
+    background-image: url("assets/Icons/social.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.twitter{
+    background-image: url("assets/Icons/twitter.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.fb{
+    background-image: url("assets/Icons/facebook.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.insta{
+    background-image: url("assets/Icons/instagram.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .top-right .top-text p{
@@ -59,13 +111,14 @@ body{
 }
 
 .top-text{
-    height: 50%;
+    height: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .top-scrolBtn{
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,7 +169,7 @@ body{
     height: auto;
     min-height: 100vh;
     width: 100vw;
-    padding: 30px;
+    padding: 20px;
     background: rgb(64,18,18);
     background: radial-gradient(circle, rgba(64,18,18,1) 0%, rgba(0,0,0,1) 100%);
 }
@@ -124,7 +177,6 @@ body{
 .aboutMe-left{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     height: 100%;
 }
@@ -294,98 +346,103 @@ body{
 
 .contact{
     width: 100vw;
-    height: 100vh;
-    padding:20px;
-    background-image: url("assets/contact-2.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    min-height: 100vh;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(64,18,18);
+    background: radial-gradient(circle, rgba(64,18,18,1) 0%, rgba(0,0,0,1) 100%);
+    margin: 20px;
 }
 
-#contactTitle{
+.contact-top{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contact-top-left{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-top-right{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-top-left-title{
+    width: 100%;
+    height: auto;
+    margin-left: 30px;
+}
+
+.contact-social{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#contatctTile{
     text-align: left;
     font-size: 70px;
     font-weight: bold;
     font-family: 'Encode Sans', sans-serif;
-    margin: 0;
-}
-
-.contact-contain{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.divc{
-    height: 40%;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .logo{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
 }
 
-.contactCall{
-    background-image: url("assets/Icons/cal.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.contactWhatsapp{
-    background-image: url("assets/Icons/whatsapp.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.contactEmail{
-    background-image: url("assets/Icons/gmail.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+
+
+.conDetailsLogo{
+    margin-left: 20px;
 }
 
-#phone{
-    font-size: 35px;
+.detCon{
+    color: white;
+    font-size: 20px;
     font-weight: bold;
-    margin-bottom: -20px;
-}
-#whatsapp{
-    font-size: 35px;
-    font-weight: bold;
-    margin-bottom: -20px;
-}
-#email{
-    font-size: 35px;
-    font-weight: bold;
-    margin-bottom: -20px;
 }
 
-#phoneNumber{
-    font-size: 22px;
-}
-#whatsappNumber{
-    font-size: 22px;
-}
-#myemail{
-    font-size: 22px;
-}
-
-.txtcontact{
+.formDiv{
     width: 100%;
     height: auto;
-    margin-top: 20px;
+    padding: 20px;
+}
+
+.formDiv-form{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 24rem;
+    gap:1rem ;
 }
-/*footer--------------------------------------------------------------------------------------*/
+
+.cont{
+    padding: 1.4rem;
+    background: transparent;
+    border: 1px solid white;
+}
+
+.contact-FormTxt{
+    color: white;
+    font-size: 30px;
+    font-family: 'Encode Sans', sans-serif;
+}
+
+    /*footer--------------------------------------------------------------------------------------*/
 
 .footer{
     padding-top: 10px;
@@ -403,6 +460,34 @@ body{
         padding-top: 20px;
     }
 
+    .top-text{
+        margin-top: 50px;
+        height: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .socialMedia{
+        height: auto;
+        width: 500px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: 0px;
+    }
+
+    .sm{
+        height: 40px;
+        margin: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
     .top-left{
         height: 40vh;
         background-image: url("assets/Imesh_Isuranga-removebg.png");
@@ -418,15 +503,18 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
+        top: -50px;
     }
 
     .top-right .top-text p{
-        font-size: 50px;
-        line-height: 60px;
-        padding-bottom: 15px;
+        font-size: 45px;
+        line-height: 50px;
+        padding-bottom: 22px;
         font-weight: bold;
         color: white;
         text-align: center;
+        padding-top: 20px;
     }
 
     #scrollBtn{
@@ -545,28 +633,29 @@ body{
 
     /*contact------------------------------------------------------------*/
 
-    #contactTitle{
-        font-size: 40px;
+    .detCon{
+        color: white;
+        font-size: 15px;
         font-weight: bold;
+    }
+
+    .logo{
+        width: 30px;
+        height: 30px;
+        margin: 10px;
+    }
+
+    .contact-FormTxt{
+        color: white;
+        font-size: 28px;
         font-family: 'Encode Sans', sans-serif;
     }
 
-    .divc{
-        height: 40%;
-        margin: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-end;
-    }
-
-    .emaildiv{
-        height: 40%;
-        margin: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
+    #contatctTile{
+        text-align: left;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'Encode Sans', sans-serif;
     }
 
 }
@@ -574,12 +663,22 @@ body{
 
 @media (max-width: 480px) {
 
-    /*TopBar*/
+    /*TopBar----------------------------------------------*/
+
+    .top-left{
+        height: 30vh;
+        background-image: url("assets/Imesh_Isuranga-removebg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 3em;
+        border: 1px solid white;
+    }
 
     .top-right .top-text p{
         font-size: 40px;
         line-height: 50px;
-        padding-bottom: 15px;
+        padding-bottom: 45px;
         font-weight: bold;
         color: white;
         text-align: center;
@@ -587,15 +686,31 @@ body{
     }
 
 
+    .socialMedia{
+        height: auto;
+        width: 350px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        position: relative;
+        left: 0px;
+    }
+
+    .sm{
+        height: 30px;
+        margin: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
     /*aboutMe-----------------------------------------------------------------------*/
 
-    .aboutMe-left-text{
-        text-align: left;
-        font-size: 70px;
-        font-weight: bold;
-        font-family: 'Encode Sans', sans-serif;
-        margin-bottom: 5px;
-    }
+
 
     .aboutMe-left-img{
         background-image: url("assets/about Me-1.png");
@@ -641,24 +756,50 @@ body{
 
     /*contact------------------------------------------------------------*/
 
-    .divc{
-        height: 40%;
-        margin: 10px;
+    .contact{
+        width: 100vw;
+        min-height: 100vh;
+        height: 1200px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        background: rgb(64,18,18);
+        background: radial-gradient(circle, rgba(64,18,18,1) 0%, rgba(0,0,0,1) 100%);
+        margin: 20px;
     }
 
-    .emaildiv{
-        height: 40%;
-        margin: 10px;
+    .contact-top{
+        width: 100%;
+        height: 100%;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        position: relative;
-        top: -90px;
+        flex-direction: row;
+        overflow: hidden;
+    }
+
+
+
+    .detCon{
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .logo{
+        width: 30px;
+        height: 30px;
+        margin: 10px;
+    }
+
+    .contact-FormTxt{
+        color: white;
+        font-size: 22px;
+        font-family: 'Encode Sans', sans-serif;
+    }
+
+    #contatctTile{
+        text-align: left;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'Encode Sans', sans-serif;
     }
 
 }
