@@ -30,16 +30,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" aria-current="page" href="#Home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">About</a>
+                    <a class="nav-link" href="#AboutMe">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
+                    <a class="nav-link" href="#Projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#Contact">Contact</a>
                 </li>
                 <li class="nav-item">
                     <label id="dark-change"></label>
@@ -47,12 +47,14 @@
                 
             </ul>
         </div>
-        <a href="assets/contact-2.jpg" class="btn btn-danger">Download CV</a>
+        <a href="Imesh%20Isuranga.pdf" class="btn btn-danger">Download CV</a>
     </div>
 </nav>
 
+<div class="context navigateToTopOfPage" onclick="location.href='#Home'"><ion-icon name="chevron-up-circle"></ion-icon></div>
+
 <!--Home--------------------------------------------------------------------------------->
-<div class="row top-bar">
+<div id="Home" class="row top-bar">
     <div class="contextBorder top-left col-8 col-sm-8 col-md-4 col-lg-4">
     </div>
     <div class="top-right col-12 col-sm-12 col-md-8 col-lg-8">
@@ -68,14 +70,14 @@
             <div class="sm insta col-1 col-sm-1 col-md-1 col-lg-1" onclick="location.href='https://www.instagram.com/_imesh_00_?r=nametag'"></div>
         </div>
         <div class="top-scrolBtn">
-            <a class="contextBorder" id="scrollBtn" href="#aboutMe"></a>
+            <a class="contextBorder" id="scrollBtn" href="#AboutMe"></a>
             <p class="context">SCROLL DOWN</p>
         </div>
     </div>
 </div>
 
 <!--AboutMe--------------------------------------------------------------------------------->
-<div class="row aboutMe">
+<div id="AboutMe" class="row aboutMe">
     <div class="context aboutMe-left col-12 col-sm-12 col-md-6 col-lg-6">
         <div class="aboutMe-left-text">
             <p>About Me</p>
@@ -89,7 +91,7 @@
 </div>
 
 <!--Projects--------------------------------------------------------------------------------->
-<div class="row projects">
+<div id="Projects" class="row projects">
     <div class="projects-left col-12 col-sm-12 col-md-5 col-lg-5">
         <p class="context" id="projectsTitle">Projects</p>
         <p class="context" id="description">With a global mindset, I've collaborated on over many projects, serving clients worldwide. Beyond application development, I'm deeply intrigued by the world of data analytics and visualization, seeking to unlock valuable insights from data. Let's discuss my journey and how my work has contributed to making a difference in the world of software engineering. </p>
@@ -155,30 +157,30 @@
 </div>
 
 <!--contact------------------------------------------------------------------------------------------->
-<div class="row contact">
+<div id="Contact" class="row contact">
     <div class="contact-title col-12 col-sm-12 col-md-12 col-lg-12"><p class="context contactTitle">Contact</p></div>
     <div class="row contact-left col-12 col-sm-12 col-md-6 col-lg-6">
 
         <div class="context icon call col-2 col-sm-2 col-md-3 col-lg-3"><ion-icon name="call"></ion-icon></div>
-        <div class="context conTxt calltxt col-4 col-sm-4 col-md-9 col-lg-9">+949352432</div>
+        <div class="context conTxt calltxt col-4 col-sm-4 col-md-9 col-lg-9"><a href="tel:+94769352432">Call Now</a></div>
 
         <div class="context icon whatsapp col-2 col-sm-2 col-md-3 col-lg-3"><ion-icon name="logo-whatsapp"></ion-icon></div>
-        <div class="context conTxt whatsapptxt col-4 col-sm-4 col-md-9 col-lg-9">+949352432</div>
+        <div class="context conTxt whatsapptxt col-4 col-sm-4 col-md-9 col-lg-9"><a href="https://wa.me/+94769352432">Let's Chat</a></div>
 
         <div class="context icon gitHub col-2 col-sm-2 col-md-3 col-lg-3"><ion-icon name="logo-github"></ion-icon></div>
-        <div class="context conTxt gitHubtxt col-4 col-sm-4 col-md-9 col-lg-9">Github</div>
+        <div class="context conTxt gitHubtxt col-4 col-sm-4 col-md-9 col-lg-9"><a href="https://github.com/Imesh-Isuranga/Imesh-Isuranga-AboutMe">GitHub</a></div>
 
         <div class="context icon linkDein col-2 col-sm-2 col-md-3 col-lg-3"><ion-icon name="logo-linkedin"></ion-icon></div>
-        <div class="context conTxt linkDeintxt col-4 col-sm-4 col-md-9 col-lg-9">Linkdein</div>
+        <div class="context conTxt linkDeintxt col-4 col-sm-4 col-md-9 col-lg-9"><a href="https://www.linkedin.com/in/imesh-isuranga-b91a82181/">Linkdein</a></div>
 
         <div class="context icon Fb col-2 col-sm-2 col-md-3 col-lg-3"><ion-icon name="logo-facebook"></ion-icon></div>
-        <div class="context conTxt Fbtxt col-4 col-sm-4 col-md-9 col-lg-9">Facebook</div>
+        <div class="context conTxt Fbtxt col-4 col-sm-4 col-md-9 col-lg-9"><a href="https://www.facebook.com/imesh.isuranga.1?mibextid=ZbWKwL">Facebook</a></div>
 
         <div class="context icon inSta col-2 col-sm-2 col-md-3 col-lg-3"><ion-icon name="logo-instagram"></ion-icon></div>
-        <div class="context conTxt inStatxt col-4 col-sm-4 col-md-9 col-lg-9">Instagram</div>
+        <div class="context conTxt inStatxt col-4 col-sm-4 col-md-9 col-lg-9"><a href="https://www.instagram.com/_imesh_00_?r=nametag">Instagram</a></div>
 
         <div class="context icon email col-2 col-sm-2 col-md-3 col-lg-3"><ion-icon name="mail"></ion-icon></div>
-        <div class="context conTxt emailtxt col-10 col-sm-10 col-md-9 col-lg-9">imeshisuranga00@gmail.com</div>
+        <div class="context conTxt emailtxt col-10 col-sm-10 col-md-9 col-lg-9"><a href="mailto:imeshisuranga00@gmail.com">Send Mail</a></div>
 
 
 
@@ -188,11 +190,11 @@
             <div class="context formTitle">Contact Form</div>
             <div class="form">
                 <form class="context formDiv-form" action="https://formspree.io/f/xnqkjyll" method="POST">
-                    <input type="text" class="context cont name col-12 col-sm-12 col-md-12 col-lg-12" placeholder="Full Name" required>
-                    <input type="email" class="context cont emai col-12 col-sm-12 col-md-12 col-lg-12" placeholder="Email" required>
-                    <input type="text" class="context cont country col-12 col-sm-12 col-md-12 col-lg-12" placeholder="Contry" required>
-                    <textarea name="message" id="" cols="20" rows="1" class="context cont message col-12 col-sm-12 col-md-12 col-lg-12" placeholder="Message"></textarea>
-                    <button type="submit" class="btn btn-success col-12 col-sm-12 col-md-12 col-lg-12">Success</button>
+                    <input type="text" class="cont name col-12 col-sm-12 col-md-12 col-lg-12" placeholder="Full Name" required>
+                    <input type="email" class="cont emai col-12 col-sm-12 col-md-12 col-lg-12" placeholder="Email" required>
+                    <input type="text" class="cont country col-12 col-sm-12 col-md-12 col-lg-12" placeholder="Country" required>
+                    <textarea name="message" id="" cols="20" rows="1" class="cont message col-12 col-sm-12 col-md-12 col-lg-12" placeholder="Message"></textarea>
+                    <button type="submit" class="btn btn-success col-12 col-sm-12 col-md-12 col-lg-12">Send</button>
                 </form>
             </div>
         </div>
@@ -201,7 +203,7 @@
 
 <!--footer------------------------------------------------------------------------------------------>
 
-<div class="footer1">Copyright © 2023 Imesh Isuranga. All rights reserved.</div>
+<div class="footer">Copyright © 2023 Imesh Isuranga. All rights reserved.</div>
 
 
 
