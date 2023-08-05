@@ -4,23 +4,38 @@
 }
 
 body{
+    background: rgb(10,3,3);
+    background: radial-gradient(circle, rgba(10,3,3,1) 0%, rgba(82,4,4,1) 100%);
     font-family: 'Roboto', sans-serif;
-    background: rgb(64,18,18);
-    background: radial-gradient(circle, rgba(64,18,18,1) 0%, rgba(0,0,0,1) 100%);
 }
 
 .context{
     color: white;
 }
-    /*TOP BAR---------------------------------------------------------------------------*/
+
+.contextBorder{
+    border: 1px solid white;
+}
+
+.contextBorder:before{
+    background-color: white;
+}
+
+.common:hover{
+    box-shadow: 0px 0px 20px 1px white;
+}
+
+.common{
+    box-shadow: 0px 0px 5px 0px black;
+}
+
+/*TOP BAR---------------------------------------------------------------------------*/
 .top-bar{
     padding: 20px;
     height: 100vh;
     width: 100vw;
     align-items: center;
     justify-content: center;
-    background: rgb(64,18,18);
-    background: radial-gradient(circle, rgba(64,18,18,1) 0%, rgba(0,0,0,1) 100%);
 }
 
 .top-left{
@@ -30,7 +45,6 @@ body{
     background-position: center;
     background-size: cover;
     border-radius: 3em;
-    border: 1px solid white;
 }
 
 .top-right{
@@ -100,12 +114,11 @@ body{
     background-size: cover;
 }
 
-.top-right .top-text p{
+.topHeadTxt{
     font-size: 90px;
     line-height: 90px;
     padding-bottom: 15px;
     font-weight: bold;
-    color: white;
     text-align: center;
     font-family: 'Encode Sans', sans-serif;
 }
@@ -132,7 +145,6 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid white;
     border-radius: 3em;
 }
 
@@ -140,7 +152,6 @@ body{
     content: "";
     height: 1.2em;
     width: 1.2em;
-    background-color: white;
     border-radius: 50%;
     animation: move-down 2s infinite;
 }
@@ -150,7 +161,7 @@ body{
         opacity: 0.5;
     }
     100%{
-        transform: translateY(3.5em);
+        transform: translateY(4.0em);
         opacity: 0;
     }
 }
@@ -158,10 +169,67 @@ body{
 .top-scrolBtn p{
     text-align: left;
     font-size: 20px;
+}
+
+#dark-change{
+    margin-top: 8px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 45px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+#dark-change:before{
+    content: "";
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    background: white;
+    border: 1px solid red;
+    position: relative;
+    left: -10px;
+    transition: 0.4s;
+}
+
+#dark-change.active:before{
+    left: 10px;
+    background: rgb(10,3,3);
+    background: radial-gradient(circle, rgba(10,3,3,1) 0%, rgba(82,4,4,1) 100%);
+}
+
+body.night{
+    background: white;
     color: white;
 }
 
+.context.night{
+    color: black;
+}
 
+.contextBorder.night{
+    border: 1px solid black;
+}
+
+.contextBorder.night:before{
+    background-color: black;
+}
+
+.common.night:hover{
+    box-shadow: 0px 0px 20px 1px black;
+}
+
+.common.night{
+    box-shadow: 0px 0px 5px 0px white;
+}
 
 /*aboutMe------------------------------------------------------------------------*/
 
@@ -170,8 +238,6 @@ body{
     min-height: 100vh;
     width: 100vw;
     padding: 20px;
-    background: rgb(64,18,18);
-    background: radial-gradient(circle, rgba(64,18,18,1) 0%, rgba(0,0,0,1) 100%);
 }
 
 .aboutMe-left{
@@ -189,7 +255,6 @@ body{
     height: 550px;
     width: 100%;
     border-radius: 3em;
-    border: 1px solid white;
 }
 
 .aboutMe-left-text{
@@ -214,8 +279,6 @@ body{
     min-height: 100vh;
     padding: 30px;
     min-height: 100vh;
-    background: rgb(64,18,18);
-    background: radial-gradient(circle, rgba(64,18,18,1) 0%, rgba(0,0,0,1) 100%);
 }
 
 .projects-left{
@@ -323,22 +386,13 @@ body{
     font-size: 23px;
 }
 
-.proj-1{
+.common{
     background: -moz-linear-gradient(90deg, red, white, blue);
-    box-shadow: 0px 0px 5px 0px white;
-}
-.proj-2{
-    background: -moz-linear-gradient(90deg, red, white, blue);
-    box-shadow: 0px 0px 5px 0px white;
-}
-.proj-3{
-    background: -moz-linear-gradient(90deg, red, white, blue);
-    box-shadow: 0px 0px 5px 0px white;
 }
 
 
-.project-1 .common:hover{
-    box-shadow: 0px 0px 20px 1px black;
+
+.common:hover{
     transform: scale(0.95);
 }
 
@@ -346,113 +400,82 @@ body{
 
 .contact{
     width: 100vw;
-    min-height: 100vh;
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-    background: rgb(64,18,18);
-    background: radial-gradient(circle, rgba(64,18,18,1) 0%, rgba(0,0,0,1) 100%);
+    height: 90vh;
     margin: 20px;
-}
-
-.contact-top{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+    overflow: hidden;
 }
 
 
-.contact-top-left{
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.contact-title{
+    height: 10vh;
 }
 
-.contact-top-right{
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.contact-top-left-title{
-    width: 100%;
-    height: auto;
-    margin-left: 30px;
-}
-
-.contact-social{
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: right;
-}
-
-#contatctTile{
-    text-align: left;
+.contactTitle{
+    margin-bottom: 20px;
+    padding-left: 20px;
     font-size: 70px;
     font-weight: bold;
     font-family: 'Encode Sans', sans-serif;
 }
 
-.logo{
-    width: 50px;
+.contact-left{
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.contact-right{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon{
     height: 50px;
-    margin: 10px;
+    font-size: 60px;
+    display: flex;
+    justify-content: right;
 }
 
-
-
-.conDetailsLogo{
-    margin-left: 20px;
-}
-
-.detCon{
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
+.conTxt{
+    height: 50px;
+    font-size: 22px;
 }
 
 .formDiv{
-    width: 100%;
-    height: auto;
-    padding: 20px;
+    height: 85%;
+    width: 85%;
 }
 
-.formDiv-form{
+.formTitle{
+    height: 10%;
+    font-size: 40px;
+}
+
+.form{
+    height: 90%;
     display: flex;
-    flex-direction: column;
-    width: 24rem;
-    gap:1rem ;
+    align-items: center;
+    justify-content: left;
 }
 
 .cont{
-    padding: 1.4rem;
-    background: transparent;
-    border: 1px solid white;
+    padding: 15px;
+    margin-top: 10px;
 }
 
-.contact-FormTxt{
-    color: white;
-    font-size: 30px;
-    font-family: 'Encode Sans', sans-serif;
-}
+/*footer--------------------------------------------------------------------------------------*/
 
-    /*footer--------------------------------------------------------------------------------------*/
-
-.footer{
-    padding-top: 10px;
+.footer1{
     width: 100vw;
-    height: 40px;
+    height: 30px;
     background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
+
 
 @media (max-width: 768px) {
     /*TOP BAR---------------------------------------------------------------------------*/
@@ -495,7 +518,6 @@ body{
         background-position: center;
         background-size: cover;
         border-radius: 3em;
-        border: 1px solid white;
     }
 
     .top-right{
@@ -524,7 +546,6 @@ body{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        border: 1px solid white;
         border-radius: 3em;
     }
 
@@ -532,7 +553,6 @@ body{
         content: "";
         height: 1.0em;
         width: 1.0em;
-        background-color: white;
         border-radius: 50%;
         animation: move-down 2s infinite;
     }
@@ -545,6 +565,19 @@ body{
             transform: translateY(2em);
             opacity: 0;
         }
+    }
+
+    #dark-change{
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-bottom: 20px;
+        width: 45px;
+        height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 3px solid black;
+        border-radius: 20px;
     }
 
     /*AboutMe--------------------------------------------*/
@@ -632,32 +665,78 @@ body{
     }
 
     /*contact------------------------------------------------------------*/
-
-    .detCon{
-        color: white;
-        font-size: 15px;
-        font-weight: bold;
+    .contact{
+        width: 100vw;
+        height: 90vh;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
     }
 
-    .logo{
-        width: 30px;
-        height: 30px;
-        margin: 10px;
+    .contact-title{
+        height: 10vh;
     }
 
-    .contact-FormTxt{
-        color: white;
-        font-size: 28px;
-        font-family: 'Encode Sans', sans-serif;
-    }
-
-    #contatctTile{
-        text-align: left;
+    .contactTitle{
         font-size: 40px;
         font-weight: bold;
         font-family: 'Encode Sans', sans-serif;
     }
 
+    .contact-left{
+        height: 50%;
+    }
+
+    .contact-right{
+        height: 50%;
+    }
+
+    .icon{
+        height: 50px;
+        font-size: 40px;
+        display: flex;
+        justify-content: right;
+    }
+
+    .conTxt{
+        height: 50px;
+        font-size: 19px;
+    }
+
+    .formTitle{
+        height: 10%;
+        font-size: 30px;
+    }
+
+    .formDiv{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .formTitle{
+        width: 40%;
+        height: 100%;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 20px;
+    }
+
+    .form{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cont{
+        padding: 8px;
+        margin-top: 5px;
+    }
 }
 
 
@@ -672,7 +751,6 @@ body{
         background-position: center;
         background-size: cover;
         border-radius: 3em;
-        border: 1px solid white;
     }
 
     .top-right .top-text p{
@@ -756,50 +834,6 @@ body{
 
     /*contact------------------------------------------------------------*/
 
-    .contact{
-        width: 100vw;
-        min-height: 100vh;
-        height: 1200px;
-        display: flex;
-        flex-direction: column;
-        background: rgb(64,18,18);
-        background: radial-gradient(circle, rgba(64,18,18,1) 0%, rgba(0,0,0,1) 100%);
-        margin: 20px;
-    }
 
-    .contact-top{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        overflow: hidden;
-    }
-
-
-
-    .detCon{
-        color: white;
-        font-size: 15px;
-        font-weight: bold;
-    }
-
-    .logo{
-        width: 30px;
-        height: 30px;
-        margin: 10px;
-    }
-
-    .contact-FormTxt{
-        color: white;
-        font-size: 22px;
-        font-family: 'Encode Sans', sans-serif;
-    }
-
-    #contatctTile{
-        text-align: left;
-        font-size: 40px;
-        font-weight: bold;
-        font-family: 'Encode Sans', sans-serif;
-    }
 
 }

@@ -41,6 +41,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
                 </li>
+                <li class="nav-item">
+                    <label id="dark-change"></label>
+                </li>
+                
             </ul>
         </div>
         <a href="Imesh%20Isuranga.pdf" class="btn btn-danger">Download CV</a>
@@ -49,11 +53,11 @@
 
 <!--Home--------------------------------------------------------------------------------->
 <div class="row top-bar">
-    <div class="top-left col-8 col-sm-8 col-md-4 col-lg-4">
+    <div class="contextBorder top-left col-8 col-sm-8 col-md-4 col-lg-4">
     </div>
     <div class="top-right col-12 col-sm-12 col-md-8 col-lg-8">
         <div class="top-text">
-            <p>I'm <br> <span class="auto-type"></span></p>
+            <p class="context topHeadTxt">I'm <br> <span class="context auto-type"></span></p>
         </div>
         <div class="row socialMedia">
             <div class="sm github col-1 col-sm-1 col-md-1 col-lg-1" onclick="location.href='https://github.com/Imesh-Isuranga/Imesh-Isuranga-AboutMe'"></div>
@@ -64,8 +68,8 @@
             <div class="sm insta col-1 col-sm-1 col-md-1 col-lg-1" onclick="location.href='https://www.instagram.com/_imesh_00_?r=nametag'"></div>
         </div>
         <div class="top-scrolBtn">
-            <a id="scrollBtn" href="#aboutMe"></a>
-            <p>SCROLL DOWN</p>
+            <a class="contextBorder" id="scrollBtn" href="#aboutMe"></a>
+            <p class="context">SCROLL DOWN</p>
         </div>
     </div>
 </div>
@@ -76,7 +80,7 @@
         <div class="aboutMe-left-text">
             <p>About Me</p>
         </div>
-        <div class="aboutMe-left-img"></div>
+        <div class="contextBorder aboutMe-left-img"></div>
     </div>
     <div class="aboutMe-right col-12 col-sm-12 col-md-6 col-lg-6">
         <p class="context">Hello there!<br><br> I'm Imesh Isuranga, a Software Engineering enthusiast from Peradeniya, Sri Lanka. As an undergraduate student at the University of Peradeniya's Faculty of Engineering, I've immersed myself in various aspects of software development.</p>
@@ -151,67 +155,43 @@
 </div>
 
 <!--contact------------------------------------------------------------------------------------------->
-<div class="contact">
-    <div class="row contact-top">
-        <div class="contact-top-left  col-6 col-sm-5 col-md-5 col-lg-6">
-            <div class="contact-top-left-title">
-                <p class="context" id="contatctTile">Contact</p>
-            </div>
-            <div class="contact-social">
-                <div class="row contact-top-left-title">
-                    <div class="conDetailsLogo col-4 col-sm-3 col-md-3 col-lg-3">
-                        <img class="logo" src="assets/Icons/cal.png" alt="">
-                    </div>
-                    <div class="conDetails col-6 col-sm-6 col-md-6 col-lg-6">
-                        <p class="detCon">Phone - +94769352432</p>
-                    </div>
-                    <div class="conDetailsLogo col-4 col-sm-3 col-md-3 col-lg-3">
-                        <img class="logo" src="assets/Icons/whatsapp.png" alt="">
-                    </div>
-                    <div class="conDetails col-5 col-sm-6 col-md-6 col-lg-6">
-                        <p class="detCon">Whatsapp</p>
-                    </div>
-                    <div class="conDetailsLogo col-4 col-sm-3 col-md-3 col-lg-3">
-                        <img class="logo" src="assets/Icons/gmail.png" alt="">
-                    </div>
-                    <div class="conDetails col-5 col-sm-6 col-md-6 col-lg-6">
-                        <p class="detCon">Email</p>
-                    </div>
-                    <div class="conDetailsLogo col-4 col-sm-3 col-md-3 col-lg-3">
-                        <img class="logo" src="assets/Icons/linkedin.png" alt="">
-                    </div>
-                    <div class="conDetails col-5 col-sm-5 col-md-6 col-lg-6">
-                        <p class="detCon">Linkdein</p>
-                    </div>
-                    <div class="conDetailsLogo  col-4 col-sm-3 col-md-3 col-lg-3">
-                        <img class="logo" src="assets/Icons/twitter.png" alt="">
-                    </div>
-                    <div class="conDetails col-5 col-sm-5 col-md-6 col-lg-6">
-                        <p class="detCon">Twitter</p>
-                    </div>
-                    <div class="conDetailsLogo col-4 col-sm-3 col-md-3 col-lg-3">
-                        <img class="logo" src="assets/Icons/facebook.png" alt="">
-                    </div>
-                    <div class="conDetails col-5 col-sm-5 col-md-6 col-lg-6">
-                        <p class="detCon">Facebook</p>
-                    </div>
-                    <div class="conDetailsLogo col-4 col-sm-3 col-md-3 col-lg-3">
-                        <img class="logo" src="assets/Icons/instagram.png" alt="">
-                    </div>
-                    <div class="conDetails col-5 col-sm-5 col-md-6 col-lg-6">
-                        <p class="detCon">Instagram</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="contact-top-right  col-7 col-sm-7 col-md-7 col-lg-6">
-            <div class="formDiv">
-                <p class="contact-FormTxt">Contact Form</p>
-                <form class="formDiv formDiv-form" action="https://formspree.io/f/xnqkjyll" method="POST">
-                    <input type="text" class="cont name col-9 col-sm-7 col-md-12 col-lg-12" placeholder="Full Name" style="color: white" required>
-                    <input type="email" class="cont emai col-9 col-sm-7 col-md-12 col-lg-12" placeholder="Email" style="color: white" required>
-                    <input type="text" class="cont country col-9 col-sm-7 col-md-12 col-lg-12" placeholder="Contry" style="color: white" required>
-                    <textarea name="message" id="" cols="20" rows="4" class="cont message col-9 col-sm-7 col-md-12 col-lg-12" placeholder="Message" style="color: white"></textarea>
+<div class="row contact">
+    <div class="contact-title col-12 col-sm-12 col-md-12 col-lg-12"><p class="context contactTitle">Contact</p></div>
+    <div class="row contact-left col-12 col-sm-12 col-md-6 col-lg-6">
+
+        <div class="context icon call col-2 col-sm-2 col-md-3 col-lg-3"><ion-icon name="call"></ion-icon></div>
+        <div class="context conTxt calltxt col-4 col-sm-4 col-md-9 col-lg-9">+949352432</div>
+
+        <div class="context icon whatsapp col-2 col-sm-2 col-md-3 col-lg-3"><ion-icon name="logo-whatsapp"></ion-icon></div>
+        <div class="context conTxt whatsapptxt col-4 col-sm-4 col-md-9 col-lg-9">+949352432</div>
+
+        <div class="context icon gitHub col-2 col-sm-2 col-md-3 col-lg-3"><ion-icon name="logo-github"></ion-icon></div>
+        <div class="context conTxt gitHubtxt col-4 col-sm-4 col-md-9 col-lg-9">Github</div>
+
+        <div class="context icon linkDein col-2 col-sm-2 col-md-3 col-lg-3"><ion-icon name="logo-linkedin"></ion-icon></div>
+        <div class="context conTxt linkDeintxt col-4 col-sm-4 col-md-9 col-lg-9">Linkdein</div>
+
+        <div class="context icon Fb col-2 col-sm-2 col-md-3 col-lg-3"><ion-icon name="logo-facebook"></ion-icon></div>
+        <div class="context conTxt Fbtxt col-4 col-sm-4 col-md-9 col-lg-9">Facebook</div>
+
+        <div class="context icon inSta col-2 col-sm-2 col-md-3 col-lg-3"><ion-icon name="logo-instagram"></ion-icon></div>
+        <div class="context conTxt inStatxt col-4 col-sm-4 col-md-9 col-lg-9">Instagram</div>
+
+        <div class="context icon email col-2 col-sm-2 col-md-3 col-lg-3"><ion-icon name="mail"></ion-icon></div>
+        <div class="context conTxt emailtxt col-4 col-sm-4 col-md-9 col-lg-9">imeshisuranga00@gmail.com</div>
+
+
+
+    </div>
+    <div class="contact-right col-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="formDiv">
+            <div class="context formTitle">Contact Form</div>
+            <div class="form">
+                <form class="context formDiv-form" action="https://formspree.io/f/xnqkjyll" method="POST">
+                    <input type="text" class="context cont name col-9 col-sm-7 col-md-12 col-lg-12" placeholder="Full Name" required>
+                    <input type="email" class="context cont emai col-9 col-sm-7 col-md-12 col-lg-12" placeholder="Email" required>
+                    <input type="text" class="context cont country col-9 col-sm-7 col-md-12 col-lg-12" placeholder="Contry" required>
+                    <textarea name="message" id="" cols="20" rows="4" class="context cont message col-9 col-sm-7 col-md-12 col-lg-12" placeholder="Message"></textarea>
                     <button type="submit" class="btn btn-success col-9 col-sm-7 col-md-12 col-lg-12">Success</button>
                 </form>
             </div>
@@ -221,9 +201,41 @@
 
 <!--footer------------------------------------------------------------------------------------------>
 
-<div class="footer">
-    <p id="footertxt">Copyright © 2023 Imesh Isuranga. All rights reserved.</p>
-</div>
+<div class="footer1">Copyright © 2023 Imesh Isuranga. All rights reserved.</div>
+
+
+
+
+
+<!--Icons--------------------------------------------------->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!--DarkMode--------------------------------------------------->
+<script>
+    var content = document.getElementsByTagName('body')[0];
+    var darkMode = document.getElementById('dark-change');
+    var contextColor = document.getElementsByClassName('context');
+    var contextBorderColor = document.getElementsByClassName('contextBorder');
+    var common = document.getElementsByClassName('common');
+
+    darkMode.addEventListener('click', function () {
+        darkMode.classList.toggle('active');
+        content.classList.toggle('night');
+
+        for (var i = 0; i < contextColor.length; i++) {
+            contextColor[i].classList.toggle('night');
+        }
+
+        for (var i = 0; i < contextBorderColor.length; i++) {
+            contextBorderColor[i].classList.toggle('night');
+        }
+
+        for (var i = 0; i < common.length; i++) {
+            common[i].classList.toggle('night');
+        }
+    });
+</script>
+<!------------------------------------------------------------>
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 <script>
     var type = new Typed(".auto-type", {
