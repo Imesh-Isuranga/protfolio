@@ -13,6 +13,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+
 .context{
     color: white;
 }
@@ -700,7 +701,7 @@ body.night{
 
     .card-img-top{
         height: 700px;
-        width: 50px;
+        width: 30px;
     }
 
     /*contact------------------------------------------------------------*/
@@ -873,7 +874,7 @@ body.night{
 
     .card-img-top{
         height: 400px;
-        width: 50px;
+        width: 25px;
     }
 
     /*contact------------------------------------------------------------*/

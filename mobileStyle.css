@@ -1,0 +1,99 @@
+body{
+    background: rgb(10,3,3);
+    background: radial-gradient(circle, rgba(10,3,3,1) 0%, rgba(82,4,4,1) 100%);
+    font-family: 'Roboto', sans-serif;
+}
+
+.context{
+    color: white;
+}
+
+.titlediv{
+    padding: 20px;
+    width: 100vw;
+    height: auto;
+    background-color: #FFFFFF;
+}
+
+.main-wrap{
+    padding: 0;
+    margin: 20px 0 0 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-title{
+    font-size: 50px;
+}
+
+.sub-title{
+    padding-left: 20px;
+    font-size: 35px;
+}
+
+.stressDucerSS{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.stressDucer-main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.stressDucer-text{
+    padding: 20px;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stressDucer-intro{
+    font-size: 25px;
+}
+
+#hislider1{
+    width: 70vw;
+    height: 80vh;
+}
+
+
+
+@media (max-width: 768px) {
+    .main-title{
+        font-size: 30px;
+    }
+
+    .sub-title{
+        padding-left: 20px;
+        font-size: 15px;
+    }
+
+    .stressDucer-main{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    .main-title{
+        font-size: 15px;
+    }
+
+    .sub-title{
+        padding-left: 20px;
+        font-size: 10px;
+    }
+}
