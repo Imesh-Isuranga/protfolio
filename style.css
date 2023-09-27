@@ -389,13 +389,22 @@ body.night{
     width: auto;
 }
 
+.card-img-top{
+    height: 700px;
+    width: 200px;
+}
+
 .text1{
     font-size: 30px;
     font-weight: bold;
 }
 
 .text2{
-    font-size: 23px;
+    font-size: 18px;
+}
+
+.text3{
+    font-size: 15px;
 }
 
 .common{
@@ -412,7 +421,7 @@ body.night{
 
 .contact{
     width: 100vw;
-    height: 90vh;
+    height: 80vh;
     margin: 20px;
     overflow: hidden;
 }
@@ -425,7 +434,7 @@ body.night{
 .contactTitle{
     margin-bottom: 20px;
     padding-left: 20px;
-    font-size: 70px;
+    font-size: 50px;
     font-weight: bold;
     font-family: 'Encode Sans', sans-serif;
 }
@@ -689,6 +698,11 @@ body.night{
         font-size: 20px;
     }
 
+    .card-img-top{
+        height: 700px;
+        width: 50px;
+    }
+
     /*contact------------------------------------------------------------*/
     .contact{
         width: 100vw;
@@ -855,6 +869,11 @@ body.night{
 
     .text2{
         font-size: 15px;
+    }
+
+    .card-img-top{
+        height: 400px;
+        width: 50px;
     }
 
     /*contact------------------------------------------------------------*/
