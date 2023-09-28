@@ -85,8 +85,25 @@
         <div class="contextBorder aboutMe-left-img"></div>
     </div>
     <div class="aboutMe-right col-12 col-sm-12 col-md-6 col-lg-6">
-        <p class="context">Hello there!<br><br> I'm Imesh Isuranga, a Software Engineering enthusiast from Peradeniya, Sri Lanka. As an undergraduate student at the University of Peradeniya's Faculty of Engineering, I've immersed myself in various aspects of software development.</p>
-        <p class="context">With a passion for creating user-centric solutions, I've dabbled in <b>desktop application development, web development, and mobile app development</b>. My journey has allowed me to work on exciting projects for numerous clients, enabling me to grow and refine my skills over the years.</p>
+        <p class="context aboutmeTxt">
+            Hello !
+            <br><br>
+            I'm Imesh Isuranga from Sri Lanka. I am an undergraduate Mechanical Engineer in the faculty of Engineering University of Peradeniya. Although I had to study mechanical engineering, I specialized in Computer Engineering because of my interest in studying computer engineering since I was in grade 9(<span style="background-color:crimson;color:yellow"><b>Have over 6 years of experience</b></span> in the Software engineering field). I think I am a <span style="background-color:crimson;color:yellow"><b>multi-talented person</b></span> as I specialize in two fields (Mechanical & Computer Engineering).
+        </p>
+        <p class="context aboutmeTxt">
+            <b>I have talent in Mobile app development, Software development, and website creation and development.</b>
+        </p>
+        <p class="context aboutmeTxt">
+            I have work experience also up to now in this field. I think I am the person at this age who has a lot of experience in this Software engineering field because of the below reasons.
+        </p>
+        <ul class="context aboutmelist">
+            <li>I have used done already many projects.</li>
+            <li>I have work experience(<span style="background-color:crimson;color:yellow"><b>have worked in two software companies</b></span>) in this field over 4 years.</li>
+            <li>I have used many software source codes in these working years and also I have used admin panels and Cpnels of complex software. Therefore I have some additional knowledge of how these all are connecting and working.</li>
+            <li>As a freelancer I know how to work with clients.</li>
+            <li>I am currently running my own software company.</li>
+        </ul>
+
     </div>
 </div>
 
@@ -132,7 +149,7 @@
                         </ul>
                         <br>
                         <br>
-                        <button class="btn btn-primary" onclick="navigateToNewPage()">More...</button>
+                        <button class="btn btn-primary" onclick="navigateToNewPage('MobileApp/mobileAppDev.html')">More...</button>
                     </div>
                 </div>
             </div>
@@ -140,18 +157,41 @@
 
         <!--project-2------------------------------------------------->
         <div class="col align-self-end row common proj-2">
-            <div class="project-2-text  col-12 col-sm-12 col-md-6 col-lg-6">
-                <div class="card2" style="width: 100%; margin-bottom: 80px">
-                    <div class="card2-body" style="padding: 20px">
-                        <h5 class="context text1 card2-title">Special title treatment</h5>
-                        <p class="context text2 card2-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary" style="font-size: 20px;">Check</a>
-                    </div>
+            <div class="project-1-img  col-12 col-sm-12 col-md-6 col-lg-6" style="margin-bottom: 10px">
+                <div class="card1-img">
+                    <img src="assets/Mobile App Development.png" class="card-img-top" alt="..." style="border-radius: 20px">
                 </div>
             </div>
-            <div class="project-2-img  col-12 col-sm-12 col-md-6 col-lg-6" style="margin-bottom: 10px">
-                <div class="card1-img">
-                    <img src="assets/Box_Imgs/1-1.png" class="card-img-top" alt="..." style="border-radius: 20px">
+            <div class="project-1-text  col-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="card1" style="width: 100%; margin-bottom: 80px">
+                    <div class="card1-body" style="padding: 20px">
+                        <h5 class="context text1 card1-title">Desktop Software Development</h5>
+                        <br>
+                        <br>
+                        <p class="context text3">Programming Languages :-</p>
+                        <ul class="context">
+                            <li>Java</li>
+                            <li>C#</li>
+                            <li>Python</li>
+                        </ul>
+                        <p class="context text3">IDE (Integrated Development Environment) :-</p>
+                        <ul class="context">
+                            <li>Intellij idea</li>
+                            <li>Visual Studio</li>
+                            <li>Eclipse</li>
+                        </ul>
+                        <p class="context text3">Database :-</p>
+                        <ul class="context">
+                            <li>MySQL </li>
+                        </ul>
+                        <p class="context text3">Version Control :-</p>
+                        <ul class="context">
+                            <li>Git</li>
+                        </ul>
+                        <br>
+                        <br>
+                        <button class="btn btn-primary" onclick="navigateToNewPage('DesktopApp/desktopApp.html')">More...</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -229,36 +269,21 @@
 
 
 
+
 <!--Icons--------------------------------------------------->
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
 <!--DarkMode--------------------------------------------------->
-<script>
-    var content = document.getElementsByTagName('body')[0];
-    var darkMode = document.getElementById('dark-change');
-    var contextColor = document.getElementsByClassName('context');
-    var contextBorderColor = document.getElementsByClassName('contextBorder');
-    var common = document.getElementsByClassName('common');
+<script src="index.js"></script>
 
-    darkMode.addEventListener('click', function () {
-        darkMode.classList.toggle('active');
-        content.classList.toggle('night');
 
-        for (var i = 0; i < contextColor.length; i++) {
-            contextColor[i].classList.toggle('night');
-        }
-
-        for (var i = 0; i < contextBorderColor.length; i++) {
-            contextBorderColor[i].classList.toggle('night');
-        }
-
-        for (var i = 0; i < common.length; i++) {
-            common[i].classList.toggle('night');
-        }
-    });
-</script>
 <!------------------------------------------------------------>
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+
+<!--animation------------------------------------------------------------->
 <script>
     var type = new Typed(".auto-type", {
         strings:["Imesh","Full Stack Developer"],
@@ -268,14 +293,5 @@
     })
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<script>
-    function navigateToNewPage() {
-        // Change the location to the new HTML file
-        window.location.href = 'mobileAppDev.html';
-    }
-</script>
-
-
-
 </body>
 </html>

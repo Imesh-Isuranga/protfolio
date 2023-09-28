@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: rgb(10,3,3);
+    background: radial-gradient(circle, rgba(10,3,3,1) 0%, rgba(82,4,4,1) 100%);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.context{
+    color: white;
+}
+
+body.light{
+    background: white;
+    color: white;
+}
+
+.context.light{
+    color: black;
+}
+
+
+.main-wrap{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-wrap{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-title p{
+    color: black;
+    font-size: 50px;
+}
+
+
+/*--First-project-------------------------------------------------------------------------------*/
+.stressDucerSS{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 70vh;
+}
+
+
+.titlediv{
+    padding: 20px;
+    width: 100vw;
+    height: auto;
+}
+
+.sub-title{
+    padding-left: 50px;
+    font-size: 35px;
+}
+
+.stressDucer-main{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stressDucer-text{
+    padding: 0;
+    margin: 0;
+    height: auto;
+    display: flex;
+}
+
+.stressDucer-intro{
+    font-size: 25px;
+}
+
+.imgslider{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.carousel-inner img{
+    width: auto;
+    height: 50vh;
+}
+
+@media (max-width: 768px) {
+    .main-title p{
+        font-size: 30px;
+    }
+
+    .sub-title{
+        padding-left: 20px;
+        font-size: 15px;
+    }
+
+    .stressDucerSS{
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        height: 40vh;
+    }
+
+
+    .stressDucer-intro{
+        font-size: 15px;
+    }
+
+    .stressDucer-text{
+        padding: 20px;
+        margin: 0;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .carousel-inner img{
+        width: auto;
+        height: 40vh;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .main-title p{
+        font-size: 22px;
+    }
+
+    .sub-title{
+        padding-left: 20px;
+        font-size: 10px;
+    }
+
+    .stressDucerSS{
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        height: 20vh;
+    }
+
+
+    .stressDucer-intro{
+        font-size: 10px;
+    }
+
+    .stressDucer-text{
+        padding: 20px;
+        margin: 0;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .carousel-inner img{
+        width: auto;
+        height: 20vh;
+    }
+
+}
