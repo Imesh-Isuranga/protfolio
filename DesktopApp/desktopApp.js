@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var content = document.getElementsByTagName('body')[0];
     var contextColor = document.getElementsByClassName('context');
+    var navColor = document.getElementsByClassName('navbar');
 
 
     // Apply the mode to the body class
@@ -17,12 +18,21 @@ document.addEventListener('DOMContentLoaded', function() {
         for (var i = 0; i < contextColor.length; i++) {
             contextColor[i].classList.toggle('light');
         }
+
+        for (var i = 0; i < navColor.length; i++) {
+            navColor[i].classList.toggle('light');
+        }
     } else {
+        mode='night';
+        content.classList.toggle('night');
+
         for (var i = 0; i < contextColor.length; i++) {
             contextColor[i].classList.toggle('night');
         }
-        mode='night';
-        content.classList.toggle('night');
+
+        for (var i = 0; i < navColor.length; i++) {
+            navColor[i].classList.toggle('night');
+        }
     }
 });
 

@@ -13,6 +13,20 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+.navbar{
+    background-color: black;
+    width: 100vw;
+    height: auto;
+    border-bottom: 1px solid white;
+}
+
+.navbar.light{
+    background-color: white;
+    width: 100vw;
+    height: auto;
+    border-bottom: 1px solid black;
+}
+
 
 
 .context{
@@ -46,7 +60,6 @@ body.light{
 }
 
 .main-title p{
-    color: black;
     font-size: 50px;
 }
 
@@ -56,7 +69,7 @@ body.light{
     padding: 0;
     margin: 0;
     width: 100vw;
-    height: 100vh;
+    height: auto;
 }
 
 
@@ -73,7 +86,7 @@ body.light{
 
 .stressDucer-main{
     width: 100vw;
-    height: 100vh;
+    height: auto;
     display: flex;
 }
 
@@ -99,8 +112,13 @@ body.light{
 
 .carousel-inner img{
     width: auto;
-    height: 80vh;
+    height: 100%;
 }
+
+.Hometxt{
+    font-size: 18px;
+}
+
 
 @media (max-width: 768px) {
     .main-title p{
@@ -119,12 +137,25 @@ body.light{
     .stressDucer-text{
         padding: 20px;
         margin: 0;
-        background-color: #FFFFFF;
         height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
+    .imgslider{
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .carousel-inner img{
+        width: auto;
+        height: 60vh;
+    }
+
 
 
 }
@@ -137,7 +168,7 @@ body.light{
 
     .sub-title{
         padding-left: 20px;
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .stressDucer-intro{
@@ -147,12 +178,25 @@ body.light{
     .stressDucer-text{
         padding: 20px;
         margin: 0;
-        background-color: #FFFFFF;
         height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
+    .imgslider{
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .carousel-inner img{
+        width: auto;
+        height: 40vh;
+    }
+
 
 
 }

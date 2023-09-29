@@ -409,12 +409,22 @@ body.light{
     font-weight: bold;
 }
 
+#card1-body{
+    display: flex;
+}
+
 #card2-body{
     display: flex;
 }
 
+#card1-img img{
+    height: 88vh;
+    width: auto;
+}
+
 #card2-img img{
     height: 58vh;
+    width: auto;
 }
 
 .text2{
@@ -428,8 +438,6 @@ body.light{
 .common{
     background: -moz-linear-gradient(90deg, red, white, blue);
 }
-
-
 
 .common:hover{
     transform: scale(0.95);
@@ -721,6 +729,16 @@ body.light{
         width: 30px;
     }
 
+    #card1-img img{
+        height: 58vh;
+        width: auto;
+    }
+
+    #card2-img img{
+        height: 48vh;
+        width: auto;
+    }
+
     /*contact------------------------------------------------------------*/
     .contact{
         width: 100vw;
@@ -893,6 +911,17 @@ body.light{
         height: 400px;
         width: 25px;
     }
+
+    #card1-img img{
+        height: 48vh;
+        width: auto;
+    }
+
+    #card2-img img{
+        height: 38vh;
+        width: auto;
+    }
+
 
     /*contact------------------------------------------------------------*/
 
