@@ -24,7 +24,10 @@ body{
     top: 0;
     pointer-events: none;
     transform: translate(-50%,-50%);
+    transition: .1s;
 }
+
+
 
 .cursor2{
     position: fixed;
@@ -36,7 +39,10 @@ body{
     top: 0;
     pointer-events: none;
     transform: translate(-50%,-50%);
+    transition: .15s;
 }
+
+
 
 .navbar{
     width: 100vw;
@@ -473,6 +479,16 @@ body.light{
     width: auto;
 }
 
+#card3-img img{
+    height: 58vh;
+    width: auto;
+}
+
+#card4-img img{
+    height: 58vh;
+    width: auto;
+}
+
 
 .text2{
     font-size: 18px;
@@ -537,14 +553,14 @@ body.light{
 
 .icon{
     height: 50px;
-    font-size: 50px;
+    font-size: 30px;
     display: flex;
     justify-content: right;
 }
 
 .conTxt{
     height: 50px;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .formDiv{
@@ -565,7 +581,7 @@ body.light{
 }
 
 .cont{
-    padding: 15px;
+    padding: 7px;
     margin-top: 10px;
 }
 
@@ -793,6 +809,22 @@ body.light{
         width: auto;
     }
 
+    #card3-img img{
+        height: 48vh;
+        width: auto;
+    }
+
+    #card4-img img{
+        height: 48vh;
+        width: auto;
+    }
+
+    .div{
+        align-items: center;
+        justify-content: center;
+    }
+
+
     /*contact------------------------------------------------------------*/
     .contact{
         width: 100vw;
@@ -822,14 +854,14 @@ body.light{
 
     .icon{
         height: 50px;
-        font-size: 40px;
+        font-size: 25px;
         display: flex;
         justify-content: right;
     }
 
     .conTxt{
         height: 50px;
-        font-size: 19px;
+        font-size: 15px;
     }
 
     .formTitle{
@@ -863,9 +895,10 @@ body.light{
     }
 
     .cont{
-        padding: 8px;
-        margin-top: 5px;
+        padding: 5px;
+        margin-top: 1px;
     }
+
 }
 
 
@@ -976,8 +1009,23 @@ body.light{
         width: auto;
     }
 
+    #card3-img img{
+        height: 22vh;
+        width: auto;
+    }
+
+    #card4-img img{
+        height: 22vh;
+        width: auto;
+    }
+
     .text3{
         font-size: 10px;
+    }
+
+    .div{
+        align-items: center;
+        justify-content: center;
     }
 
 
@@ -1004,6 +1052,11 @@ body.light{
         display: flex;
         align-items: center;
         justify-content: left;
+    }
+
+    .cont{
+        padding: 2px;
+        margin-top: 1px;
     }
 
 

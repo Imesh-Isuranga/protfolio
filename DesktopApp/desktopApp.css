@@ -13,6 +13,13 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+.spacer{
+    width:100%;
+    border:1px solid dimgray;
+    margin:0;
+    box-sizing: border-box;
+}
+
 .navbar{
     background-color: black;
     width: 100vw;
