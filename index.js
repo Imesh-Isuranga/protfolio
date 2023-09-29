@@ -6,10 +6,10 @@ var darkMode = document.getElementById('dark-change');
 var contextColor = document.getElementsByClassName('context');
 var contextBorderColor = document.getElementsByClassName('contextBorder');
 var common = document.getElementsByClassName('common');
+var navbar = document.getElementsByClassName('navbar');
 
 darkMode.addEventListener('click', function () {
     mode=='night' ? mode='light': (mode=='light' ? mode='night' : mode='light');
-    console.log("1111111111111111111111111   "+mode);
     darkMode.classList.toggle('active');
     content.classList.toggle('light');
 
@@ -23,6 +23,10 @@ darkMode.addEventListener('click', function () {
 
     for (var i = 0; i < common.length; i++) {
         common[i].classList.toggle('light');
+    }
+
+    for (var i = 0; i < navbar.length; i++) {
+        navbar[i].classList.toggle('light');
     }
 });
 
@@ -44,6 +48,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var contextColor = document.getElementsByClassName('context');
     var contextBorderColor = document.getElementsByClassName('contextBorder');
     var common = document.getElementsByClassName('common');
+    var navbar = document.getElementsByClassName('navbar');
+
 
 
     // Apply the mode to the body class
@@ -62,6 +68,10 @@ document.addEventListener('DOMContentLoaded', function() {
         for (var i = 0; i < common.length; i++) {
             common[i].classList.toggle('light');
         }
+
+        for (var i = 0; i < navbar.length; i++) {
+            navbar[i].classList.toggle('light');
+        }
     } else {
         mode='night';
         content.classList.toggle('night');
@@ -76,6 +86,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         for (var i = 0; i < common.length; i++) {
             common[i].classList.toggle('night');
+        }
+
+        for (var i = 0; i < navbar.length; i++) {
+            navbar[i].classList.toggle('night');
         }
     }
 });
