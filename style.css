@@ -409,6 +409,14 @@ body.light{
     font-weight: bold;
 }
 
+#card2-body{
+    display: flex;
+}
+
+#card2-img img{
+    height: 58vh;
+}
+
 .text2{
     font-size: 18px;
 }

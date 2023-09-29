@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 function navigateToNewPage() {
-    console.log("ssss  " + mode)
     // Change the location to the new HTML file
     window.location.href = '../index.html?mode=' + mode;
 }
