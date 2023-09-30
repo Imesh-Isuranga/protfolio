@@ -158,7 +158,7 @@ body.light{
     }
 
     .imgslider{
-        height: 70vh;
+        height: 60vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -167,7 +167,7 @@ body.light{
 
     .carousel-inner img{
         width: auto;
-        height: 60vh;
+        height: 40vh;
     }
 
 
@@ -204,7 +204,7 @@ body.light{
     }
 
     .imgslider{
-        height: 50vh;
+        height: 20vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -213,7 +213,7 @@ body.light{
 
     .carousel-inner img{
         width: auto;
-        height: 40vh;
+        height: 20vh;
     }
 
 
