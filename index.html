@@ -84,7 +84,7 @@
         </div>
         <div class="contextBorder aboutMe-left-img"></div>
     </div>
-    <div class="aboutMe-right col-11 col-sm-11 col-md-8 col-lg-8">
+    <div class="aboutMe-right col-11 col-sm-11 col-md-8 col-lg-8 reveal">
         <p class="context aboutmeTxt">
             <ion-icon name="hand-right-outline"></ion-icon> Hello !
             <br><br>
@@ -112,14 +112,14 @@
 <div id="Projects" class="row projects">
     <div class="projects-left col-12 col-sm-12 col-md-5 col-lg-5">
         <p class="context" id="projectsTitle">Projects</p>
-        <p class="context" id="description">With a global mindset, I've collaborated on over many projects, serving clients worldwide. Beyond application development, I'm deeply intrigued by the world of data analytics and visualization, seeking to unlock valuable insights from data. Let's discuss my journey and how my work has contributed to making a difference in the world of software engineering. </p>
+        <p class="context reveal" id="description">With a global mindset, I've collaborated on over many projects, serving clients worldwide. Beyond application development, I'm deeply intrigued by the world of data analytics and visualization, seeking to unlock valuable insights from data. Let's discuss my journey and how my work has contributed to making a difference in the world of software engineering. </p>
     </div>
     <div class="projects-right col-12 col-sm-12 col-md-7 col-lg-7">
         <div class="preview-projects"></div>
     </div>
     <div class="row project-1">
         <!--project-1------------------------------------------------->
-        <div class="col align-self-start row common proj-1">
+        <div class="col align-self-start row common proj-1 revealProductstoLeft">
             <div class="project-1-img  col-12 col-sm-12 col-md-4 col-lg-4" style="margin-bottom: 10px">
                 <div id="card1-img" class="card1-img">
                     <img src="assets/Mobile App Development.png" class="card-img-top" alt="..." style="border-radius: 20px">
@@ -163,7 +163,7 @@
         </div>
 
         <!--project-2------------------------------------------------->
-        <div class="col align-self-end row common proj-2">
+        <div class="col align-self-end row common proj-2 revealProductstoRight">
             <div class="project-1-img  col-12 col-sm-12 col-md-8 col-lg-8" style="margin-bottom: 10px">
                 <div id="card2-img" class="card1-img">
                     <img src="assets/Thogakade/desktopApp.png" class="card-img-top" alt="..." style="border-radius: 20px">
@@ -212,7 +212,7 @@
         </div>
 
         <!--project-3------------------------------------------------->
-        <div class="col align-self-start row common proj-3">
+        <div class="col align-self-start row common proj-3 revealProductstoLeft">
             <div class="project-1-img  col-12 col-sm-12 col-md-8 col-lg-8" style="margin-bottom: 10px">
                 <div id="card3-img" class="card1-img">
                     <img src="assets/Thogakade/desktopApp.png" class="card-img-top" alt="..." style="border-radius: 20px">
@@ -281,7 +281,7 @@
         </div>
 
         <!--project-4------------------------------------------------->
-        <div class="col align-self-end row common proj-3">
+        <div class="col align-self-end row common proj-3 revealProductstoRight">
             <div class="project-1-img  col-12 col-sm-12 col-md-8 col-lg-8" style="margin-bottom: 10px">
                 <div id="card4-img" class="card1-img">
                     <img src="assets/WebSite/websiteDeveloping.png" class="card-img-top" alt="..." style="border-radius: 20px">
@@ -375,6 +375,67 @@
     document.addEventListener("mousemove",function (e){
         cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
     })
+</script>
+
+
+<script type="text/javascript">
+    window.addEventListener("scroll",reveal);
+
+    function reveal(){
+        var reveals = document.querySelectorAll('.reveal');
+        for (var i=0; i<reveals.length; i++){
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+
+            if(revealtop<windowheight-revealpoint){
+                reveals[i].classList.add('active')
+            }else{
+                reveals[i].classList.remove('active');
+            }
+        }
+    }
+</script>
+
+
+
+<script type="text/javascript">
+    window.addEventListener("scroll",revealProductstoLeft);
+
+    function revealProductstoLeft(){
+        var revealProducts = document.querySelectorAll('.revealProductstoLeft');
+        for (var i=0; i<revealProducts.length; i++){
+            var windowheight = window.innerHeight;
+            var revealProductstop = revealProducts[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+
+            if(revealProductstop<windowheight-revealpoint){
+                revealProducts[i].classList.add('active')
+            }else{
+                revealProducts[i].classList.remove('active');
+            }
+        }
+    }
+</script>
+
+
+<script type="text/javascript">
+    window.addEventListener("scroll",revealProductstoRight);
+
+    function revealProductstoRight(){
+        var revealProducts = document.querySelectorAll('.revealProductstoRight');
+        for (var i=0; i<revealProducts.length; i++){
+            var windowheight = window.innerHeight;
+            var revealProductstop = revealProducts[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+
+            if(revealProductstop<windowheight-revealpoint){
+                revealProducts[i].classList.add('active')
+            }else{
+                revealProducts[i].classList.remove('active');
+            }
+        }
+    }
 </script>
 
 

@@ -3,6 +3,46 @@
     margin: 0;
 }
 
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.revealProductstoLeft{
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+
+.revealProductstoLeft.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.revealProductstoRight{
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+
+.revealProductstoRight.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -648,6 +688,7 @@ body.light{
         background-position: center;
         background-size: cover;
         border-radius: 3em;
+        margin-bottom: 40px;
     }
 
     .top-right{
@@ -667,6 +708,7 @@ body.light{
         color: white;
         text-align: center;
         padding-top: 20px;
+        margin-bottom: 40px;
     }
 
     #scrollBtn{
@@ -913,9 +955,11 @@ body.light{
         background-position: center;
         background-size: cover;
         border-radius: 3em;
+        margin-bottom: 80px;
     }
 
     .top-right .top-text p{
+        margin-bottom: 40px;
         font-size: 40px;
         line-height: 50px;
         padding-bottom: 45px;
