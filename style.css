@@ -1260,7 +1260,8 @@ body.light{
     /*Technical Skill-----------------------------------------------------------------------------*/
 
     .container{
-        background-color: #0984e3;
+        margin-top: 20px;
+        margin-bottom: 60px;
         width: 100px;
         height: 150px;
     }
@@ -1279,7 +1280,7 @@ body.light{
     .stack .imgBx{
         background-color: #ff0000;
         position: absolute;
-        left: -20px;
+        left: -30px;
         top: 90px;
         width: 50px;
         height: 50px;
@@ -1288,7 +1289,7 @@ body.light{
         border: 1px solid #1245ee;
         box-shadow: 0 0 0 4px #222,0 0 0 6px #fff;
         transform: rotate(calc(360deg/4 * var(--i)));
-        transform-origin: 23vh;
+        transform-origin: 32vw;
     }
 
     .stack .imgBx:hover{
