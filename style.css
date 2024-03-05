@@ -439,7 +439,7 @@ body.light{
     border: 1px solid white;
     box-shadow: 0 0 0 4px #222,0 0 0 6px #fff;
     transform: rotate(calc(360deg/4 * var(--i)));
-    transform-origin: 300px;
+    transform-origin: 45vh;
 }
 
 .stack .imgBx:hover{
@@ -1000,6 +1000,8 @@ body.light{
 
     .container{
         height: 300px;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
     .Technical-Skill-text{
@@ -1025,7 +1027,7 @@ body.light{
          border: 1px solid #1245ee;
          box-shadow: 0 0 0 4px #222,0 0 0 6px #fff;
          transform: rotate(calc(360deg/4 * var(--i)));
-         transform-origin: 240px;
+         transform-origin: 45vh;
      }
 
     .stack .imgBx:hover{
@@ -1256,6 +1258,11 @@ body.light{
 
 
     /*Technical Skill-----------------------------------------------------------------------------*/
+
+    .container{
+        height: 150px;
+    }
+
     .stack{
         position: relative;
         display: flex;
@@ -1279,7 +1286,7 @@ body.light{
         border: 1px solid #1245ee;
         box-shadow: 0 0 0 4px #222,0 0 0 6px #fff;
         transform: rotate(calc(360deg/4 * var(--i)));
-        transform-origin: 140px;
+        transform-origin: 23vh;
     }
 
     .stack .imgBx:hover{
@@ -1288,8 +1295,8 @@ body.light{
     }
 
     .text-stack{
-        height: 20vh;
-        width: 60vw;
+        height: 25vh;
+        width: 90vw;
         display: flex;
         align-items: center;
         justify-content: center;
