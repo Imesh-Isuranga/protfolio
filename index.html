@@ -39,6 +39,9 @@
                     <a class="nav-link" href="#Projects">Projects</a>
                 </li>
                 <li class="context nav-item">
+                    <a class="nav-link" href="https://medium.com/@imeshisuranga00">Blog</a>
+                </li>
+                <li class="context nav-item">
                     <a class="nav-link" href="#Contact">Contact</a>
                 </li>
                 <li class="nav-item">
@@ -68,6 +71,7 @@
             <div class="sm twitter col-1 col-sm-1 col-md-1 col-lg-1" onclick="location.href='https://twitter.com/imesh_isuranga?t=VDF9sAkKm5mkv-4MNASFUA&s=09'"></div>
             <div class="sm fb col-1 col-sm-1 col-md-1 col-lg-1" onclick="location.href='https://www.facebook.com/imesh.isuranga.1?mibextid=ZbWKwL'"></div>
             <div class="sm insta col-1 col-sm-1 col-md-1 col-lg-1" onclick="location.href='https://www.instagram.com/_imesh_00_?r=nametag'"></div>
+            <div class="sm medium col-1 col-sm-1 col-md-1 col-lg-1" onclick="location.href='https://medium.com/@imeshisuranga00'"></div>
         </div>
         <div class="top-scrolBtn">
             <a class="contextBorder" id="scrollBtn" href="#AboutMe"></a>
@@ -107,6 +111,54 @@
 
     </div>
 </div>
+
+<!--Technical Skill--------------------------------------------------------------------------------->
+<div class="context Technical-Skill-text">
+    <p>Technical Skill</p>
+</div>
+<div class="container">
+    <div class="stack">
+
+        <div class="row text-stack front d-none">
+            <div class="sm html col-6 col-sm-6 col-md-1 col-lg-6"></div>
+            <div class="sm css col-6 col-sm-6 col-md-1 col-lg-6"></div>
+            <div class="sm javascript col-1 col-sm-1 col-md-1 col-lg-6"></div>
+            <div class="sm angular col-1 col-sm-1 col-md-1 col-lg-4"></div>
+            <div class="sm bootstrap col-1 col-sm-1 col-md-1 col-lg-4"></div>
+        </div>
+
+        <div class="text-stack back d-none">
+            <div class="sm spring"></div>
+            <div class="sm node"></div>
+        </div>
+
+        <div class="text-stack database d-none">
+            <div class="sm mysql"></div>
+            <div class="sm mongodb"></div>
+            <div class="sm firebase"></div>
+        </div>
+
+        <div class="text-stack mobile d-none">
+            <div class="sm flutter"></div>
+            <div class="sm android"></div>
+        </div>
+
+        <div class="imgBx" style="--i:0;" >
+            <img src="assets/Stack/backend.png" alt="" onclick="changeStack(0)">
+        </div>
+        <div class="imgBx" style="--i:1;">
+            <img src="assets/Stack/frontend.png" alt="" style="transform: rotate(-90deg)" onclick="changeStack(1)">
+        </div>
+        <div class="imgBx" style="--i:2;">
+            <img src="assets/Stack/database.png" alt="" style="transform: rotate(-180deg)" onclick="changeStack(2)">
+        </div>
+        <div class="imgBx" style="--i:3;">
+            <img src="assets/Stack/mobile.png" alt="" style="transform: rotate(90deg)" onclick="changeStack(3)">
+        </div>
+
+    </div>
+</div>
+
 
 <!--Projects--------------------------------------------------------------------------------->
 <div id="Projects" class="row projects">
@@ -322,25 +374,25 @@
     <div class="contact-title col-12 col-sm-12 col-md-12 col-lg-12"><p class="context contactTitle">Contact</p></div>
     <div class="row contact-left col-12 col-sm-12 col-md-6 col-lg-6">
 
-        <div class="context icon call col-2 col-sm-2 col-md-3 col-lg-3"><ion-icon name="call"></ion-icon></div>
+        <div class="context stack-outer call col-2 col-sm-2 col-md-3 col-lg-3"><ion-icon name="call"></ion-icon></div>
         <div class="context conTxt calltxt col-4 col-sm-4 col-md-9 col-lg-9"><a href="tel:+94769352432">Call Now</a></div>
 
-        <div class="context icon whatsapp col-2 col-sm-2 col-md-3 col-lg-3"><ion-icon name="logo-whatsapp"></ion-icon></div>
+        <div class="context stack-outer whatsapp col-2 col-sm-2 col-md-3 col-lg-3"><ion-icon name="logo-whatsapp"></ion-icon></div>
         <div class="context conTxt whatsapptxt col-4 col-sm-4 col-md-9 col-lg-9"><a href="https://wa.me/+94769352432">Let's Chat</a></div>
 
-        <div class="context icon gitHub col-2 col-sm-2 col-md-3 col-lg-3"><ion-icon name="logo-github"></ion-icon></div>
+        <div class="context stack-outer gitHub col-2 col-sm-2 col-md-3 col-lg-3"><ion-icon name="logo-github"></ion-icon></div>
         <div class="context conTxt gitHubtxt col-4 col-sm-4 col-md-9 col-lg-9"><a href="https://github.com/Imesh-Isuranga/Imesh-Isuranga-AboutMe">GitHub</a></div>
 
-        <div class="context icon linkDein col-2 col-sm-2 col-md-3 col-lg-3"><ion-icon name="logo-linkedin"></ion-icon></div>
+        <div class="context stack-outer linkDein col-2 col-sm-2 col-md-3 col-lg-3"><ion-icon name="logo-linkedin"></ion-icon></div>
         <div class="context conTxt linkDeintxt col-4 col-sm-4 col-md-9 col-lg-9"><a href="https://www.linkedin.com/in/imesh-isuranga-b91a82181/">Linkdein</a></div>
 
-        <div class="context icon Fb col-2 col-sm-2 col-md-3 col-lg-3"><ion-icon name="logo-facebook"></ion-icon></div>
+        <div class="context stack-outer Fb col-2 col-sm-2 col-md-3 col-lg-3"><ion-icon name="logo-facebook"></ion-icon></div>
         <div class="context conTxt Fbtxt col-4 col-sm-4 col-md-9 col-lg-9"><a href="https://www.facebook.com/imesh.isuranga.1?mibextid=ZbWKwL">Facebook</a></div>
 
-        <div class="context icon inSta col-2 col-sm-2 col-md-3 col-lg-3"><ion-icon name="logo-instagram"></ion-icon></div>
+        <div class="context stack-outer inSta col-2 col-sm-2 col-md-3 col-lg-3"><ion-icon name="logo-instagram"></ion-icon></div>
         <div class="context conTxt inStatxt col-4 col-sm-4 col-md-9 col-lg-9"><a href="https://www.instagram.com/_imesh_00_?r=nametag">Instagram</a></div>
 
-        <div class="context icon email col-2 col-sm-2 col-md-3 col-lg-3"><ion-icon name="mail"></ion-icon></div>
+        <div class="context stack-outer email col-2 col-sm-2 col-md-3 col-lg-3"><ion-icon name="mail"></ion-icon></div>
         <div class="context conTxt emailtxt col-10 col-sm-10 col-md-9 col-lg-9"><a href="mailto:imeshisuranga00@gmail.com">Send Mail</a></div>
 
 
@@ -377,6 +429,34 @@
     })
 </script>
 
+
+<!--Skills--------------------------------------------------->
+<script type="text/javascript">
+    function changeStack(index){
+        var revealProducts = document.querySelectorAll('.text-stack');
+        if(index == 1){
+            revealProducts[0].classList.remove('d-none')
+            revealProducts[1].classList.add('d-none')
+            revealProducts[2].classList.add('d-none')
+            revealProducts[3].classList.add('d-none')
+        }else if(index == 2){
+            revealProducts[0].classList.add('d-none')
+            revealProducts[1].classList.remove('d-none')
+            revealProducts[2].classList.add('d-none')
+            revealProducts[3].classList.add('d-none')
+        }else if(index == 3){
+            revealProducts[0].classList.add('d-none')
+            revealProducts[1].classList.add('d-none')
+            revealProducts[2].classList.remove('d-none')
+            revealProducts[3].classList.add('d-none')
+        }else{
+            revealProducts[0].classList.add('d-none')
+            revealProducts[1].classList.add('d-none')
+            revealProducts[2].classList.add('d-none')
+            revealProducts[3].classList.remove('d-none')
+        }
+    }
+</script>
 
 <script type="text/javascript">
     window.addEventListener("scroll",reveal);
