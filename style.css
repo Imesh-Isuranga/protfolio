@@ -1260,6 +1260,8 @@ body.light{
     /*Technical Skill-----------------------------------------------------------------------------*/
 
     .container{
+        background-color: #0984e3;
+        width: 100px;
         height: 150px;
     }
 
