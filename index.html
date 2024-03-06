@@ -5,6 +5,7 @@
     <meta name="viewport" content= "width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="skill.css">
 
     <!--Google fonts----------------------------------------------------------------------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -113,11 +114,13 @@
 </div>
 
 <!--Technical Skill--------------------------------------------------------------------------------->
+
 <div class="context Technical-Skill-text">
     <p>Technical Skills</p>
 </div>
+<!--
 <div class="container">
-    <div class="stack">
+    <div class="row stack">
 
         <div class="row text-stack front d-none">
             <div class="sm html col-1 col-sm-1 col-md-1 col-lg-6"></div>
@@ -143,21 +146,129 @@
             <div class="sm android"></div>
         </div>
 
-        <div class="imgBx" style="--i:0;" >
+        <div class="imgBx  col-1 col-sm-1 col-md-12 col-lg-12" style="--i:0;" >
             <img src="assets/Stack/backend.png" alt="" onclick="changeStack(0)">
         </div>
-        <div class="imgBx" style="--i:1;">
+        <div class="imgBx  col-1 col-sm-1 col-md-1 col-lg-6" style="--i:1;">
             <img src="assets/Stack/frontend.png" alt="" style="transform: rotate(-90deg)" onclick="changeStack(1)">
         </div>
-        <div class="imgBx" style="--i:2;">
+        <div class="imgBx  col-1 col-sm-1 col-md-1 col-lg-6" style="--i:2;">
             <img src="assets/Stack/database.png" alt="" style="transform: rotate(-180deg)" onclick="changeStack(2)">
         </div>
-        <div class="imgBx" style="--i:3;">
+        <div class="imgBx  col-1 col-sm-1 col-md-1 col-lg-6" style="--i:3;">
             <img src="assets/Stack/mobile.png" alt="" style="transform: rotate(90deg)" onclick="changeStack(3)">
         </div>
 
     </div>
+</div>>
+
+<!-partial:index.partial.html -->
+<div id="wrapper">
+    <div id="container">
+
+        <ol class="organizational-chart">
+            <li class="context">
+                <div class="contextBorder">
+                    <h1>My Stack</h1>
+                </div>
+                <ol>
+                    <li>
+                        <div class="contextBorder">
+                            <h2>FrontEnd</h2>
+                        </div>
+                        <ol>
+                            <li>
+                                <div onmouseover="changeStack(1)">
+                                    <h3>HTML</h3>
+                                    <img class="text-stack d-none" src="assets/Stack/Frontend/html.png" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h3>CSS</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h3>JavaScript</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h3>Angular</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h3>Bootstrap</h3>
+                                </div>
+                            </li>
+
+                        </ol>
+                    </li>
+                    <li>
+                        <div class="contextBorder">
+                            <h2>BackEnd</h2>
+                        </div>
+                        <ol>
+                            <li>
+                                <div>
+                                    <h3>SpringBoot</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h3>Nodejs</h3>
+                                </div>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <div class="contextBorder">
+                            <h2>Databases</h2>
+                        </div>
+                        <ol>
+                            <li>
+                                <div>
+                                    <h3>MySQL</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h3>Firebase</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h3>Nodejs</h3>
+                                </div>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <div class="contextBorder">
+                            <h2>Mobile</h2>
+                        </div>
+                        <ol>
+                            <li>
+                                <div>
+                                    <h3>Flutter</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h3>Android</h3>
+                                </div>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+
+    </div>
 </div>
+<!-- partial -->
 
 
 <!--Projects--------------------------------------------------------------------------------->
@@ -435,27 +546,45 @@
     function changeStack(index){
         var revealProducts = document.querySelectorAll('.text-stack');
         if(index == 1){
+            console.log("qqqqqqqqqqqqqqqqqqqqqq")
             revealProducts[0].classList.remove('d-none')
-            revealProducts[1].classList.add('d-none')
-            revealProducts[2].classList.add('d-none')
-            revealProducts[3].classList.add('d-none')
         }else if(index == 2){
             revealProducts[0].classList.add('d-none')
-            revealProducts[1].classList.remove('d-none')
-            revealProducts[2].classList.add('d-none')
-            revealProducts[3].classList.add('d-none')
         }else if(index == 3){
             revealProducts[0].classList.add('d-none')
-            revealProducts[1].classList.add('d-none')
-            revealProducts[2].classList.remove('d-none')
-            revealProducts[3].classList.add('d-none')
         }else{
             revealProducts[0].classList.add('d-none')
             revealProducts[1].classList.add('d-none')
             revealProducts[2].classList.add('d-none')
             revealProducts[3].classList.remove('d-none')
         }
-    }
+
+        function changeStackOut(index){
+            var revealProducts = document.querySelectorAll('.text-stack');
+            if(index == 1){
+                revealProducts[0].classList.add('d-none')
+                console.log("sssssssssssssssssssssssssssssssssssssssss")
+                revealProducts[1].classList.add('d-none')
+                revealProducts[2].classList.add('d-none')
+                revealProducts[3].classList.add('d-none')
+            }else if(index == 2){
+                revealProducts[0].classList.add('d-none')
+                revealProducts[1].classList.remove('d-none')
+                revealProducts[2].classList.add('d-none')
+                revealProducts[3].classList.add('d-none')
+            }else if(index == 3){
+                revealProducts[0].classList.add('d-none')
+                revealProducts[1].classList.add('d-none')
+                revealProducts[2].classList.remove('d-none')
+                revealProducts[3].classList.add('d-none')
+            }else{
+                revealProducts[0].classList.add('d-none')
+                revealProducts[1].classList.add('d-none')
+                revealProducts[2].classList.add('d-none')
+                revealProducts[3].classList.remove('d-none')
+            }
+    }}
+
 </script>
 
 <script type="text/javascript">

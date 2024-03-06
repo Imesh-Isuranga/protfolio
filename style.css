@@ -409,37 +409,23 @@ body.light{
 }
 
 .container{
-    display: flex;
     width: 100vw;
     height: 100vh;
-    align-items: center;
-    justify-content: center;
 }
 
 .stack{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80vh;
-    height: 80vh;
-    border-radius: 50%;
+    height: 100vh;
+    background-color: #1245ee;
     border: 1px solid white;
 }
 
 .stack .imgBx{
-    background-color: #ff0000;
-    position: absolute;
-    left: -30px;
-    top: 215px;
+    background-color: white;
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    overflow: hidden;
     border: 1px solid white;
     box-shadow: 0 0 0 4px #222,0 0 0 6px #fff;
-    transform: rotate(calc(360deg/4 * var(--i)));
-    transform-origin: 45vh;
 }
 
 .stack .imgBx:hover{
