@@ -174,7 +174,7 @@ ol.organizational-chart > li > ol > li > ol > li > div {
 
 ol.organizational-chart > li > ol > li > ol > li > div:hover {
     border-radius: 50px;
-    background-color: #fd6470;
+    background-color: rgba(117, 116, 116, 0.3);
 }
 
 /*** QUATERNARY ***/
