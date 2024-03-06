@@ -548,6 +548,7 @@ body.light{
 /*Projects---------------------------------------------------------------------------------*/
 
 .projects{
+    overflow: hidden;
     width: 100vw;
     height: auto;
     min-height: 100vh;
@@ -1032,6 +1033,7 @@ body.light{
     /*Projects---------------------------------------------------------------------------------*/
 
     .projects{
+        overflow: hidden;
         width: 100vw;
         height: auto;
         min-height: 100vh;
@@ -1299,6 +1301,7 @@ body.light{
 
     /*Projects---------------------------------------------------------------------------------*/
     .projects{
+        overflow: hidden;
         width: 100vw;
         height: auto;
         min-height: 100vh;
