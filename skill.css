@@ -163,7 +163,10 @@ ol.organizational-chart > li > ol:after {
 }
 
 ol.organizational-chart > li > ol > li > div {
-    border: 2px solid #ffffff;
+    -webkit-box-shadow: 8px 10px 17px 8px rgba(0,0,0,0.66);
+    -moz-box-shadow: 8px 10px 17px 8px rgba(0,0,0,0.66);
+    box-shadow: 8px 10px 17px 8px rgba(0,0,0,0.66);
+    border: 1px solid #ffffff;
 }
 
 /*** TERTIARY ***/
@@ -173,6 +176,9 @@ ol.organizational-chart > li > ol > li > ol > li > div {
 }
 
 ol.organizational-chart > li > ol > li > ol > li > div:hover {
+    -webkit-box-shadow: 4px 10px 22px 4px rgba(0,0,0,0.51);
+    -moz-box-shadow: 4px 10px 22px 4px rgba(0,0,0,0.51);
+    box-shadow: 4px 10px 22px 4px rgba(0,0,0,0.51);
     border-radius: 50px;
     background-color: rgba(117, 116, 116, 0.3);
 }
