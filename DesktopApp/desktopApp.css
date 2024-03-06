@@ -84,7 +84,7 @@ body.light{
 
 
 /*--First-project-------------------------------------------------------------------------------*/
-.stressDucerSS{
+.desktopApp{
     padding: 0;
     margin: 0;
     width: 100vw;
@@ -103,13 +103,13 @@ body.light{
     font-size: 35px;
 }
 
-.stressDucer-main{
+.desktopApp-main{
     width: 100vw;
     height: auto;
     display: flex;
 }
 
-.stressDucer-text{
+.desktopApp-text{
     padding: 0;
     margin: 0;
     height: 80vh;
@@ -118,7 +118,7 @@ body.light{
     justify-content: center;
 }
 
-.stressDucer-intro{
+.desktopApp-intro{
     font-size: 25px;
 }
 
@@ -149,11 +149,11 @@ body.light{
         font-size: 15px;
     }
 
-    .stressDucer-intro{
+    .desktopApp-intro{
         font-size: 15px;
     }
 
-    .stressDucer-text{
+    .desktopApp-text{
         padding: 20px;
         margin: 0;
         height: auto;
@@ -190,11 +190,11 @@ body.light{
         font-size: 15px;
     }
 
-    .stressDucer-intro{
+    .desktopApp-intro{
         font-size: 10px;
     }
 
-    .stressDucer-text{
+    .desktopApp-text{
         padding: 20px;
         margin: 0;
         height: auto;

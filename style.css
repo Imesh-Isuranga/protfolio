@@ -374,15 +374,14 @@ body.light{
 
 .aboutMe-left-text{
     text-align: left;
-    font-size: 65px;
+    font-size: 70px;
     font-weight: bold;
     font-family: 'Encode Sans', sans-serif;
     margin-bottom: 50px;
 }
 
 .aboutMe-right{
-    height: auto;
-    padding-top: 180px;
+    height: 100%;
     margin: 0px 20px 0 20px;
 }
 
@@ -403,58 +402,11 @@ body.light{
     margin-top: 30px;
     height: 120px;
     text-align: left;
-    font-size: 65px;
+    font-size: 70px;
     font-weight: bold;
     font-family: 'Encode Sans', sans-serif;
 }
 
-.container{
-    width: 100vw;
-    height: 100vh;
-}
-
-.stack{
-    height: 100vh;
-    background-color: #1245ee;
-    border: 1px solid white;
-}
-
-.stack .imgBx{
-    background-color: white;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 1px solid white;
-    box-shadow: 0 0 0 4px #222,0 0 0 6px #fff;
-}
-
-.stack .imgBx:hover{
-    width: 200px;
-    height: 200px;
-}
-
-.stack .imgBx img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.text-stack{
-    height: 40vh;
-    width: 20vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.text-stack .sm{
-    width: 60px;
-    height: 60px;
-}
 
 .hidden{
     display: none;
@@ -798,37 +750,6 @@ body.light{
     color: black;
 }
 
-@media (max-width: 900px) {
-    .text-stack{
-        height: 40vh;
-        width: 40vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .stack .imgBx{
-        background-color: #ff0000;
-        position: absolute;
-        left: -30px;
-        top: 180px;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        overflow: hidden;
-        border: 1px solid white;
-        box-shadow: 0 0 0 4px #222,0 0 0 6px #fff;
-        transform: rotate(calc(360deg/4 * var(--i)));
-        transform-origin: 270px;
-    }
-
-    .stack .imgBx:hover{
-        width: 150px;
-        height: 150px;
-    }
-
-}
-
 @media (max-width: 768px) {
 
     .navigateToTopOfPage{
@@ -985,12 +906,6 @@ body.light{
 
     /*Technical Skill-----------------------------------------------------------------------------*/
 
-    .container{
-        height: 300px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-
     .Technical-Skill-text{
         margin-left: 20px;
         margin-top: 20px;
@@ -1002,33 +917,6 @@ body.light{
     }
 
 
-    .stack .imgBx{
-         background-color: #ff0000;
-         position: absolute;
-         left: -20px;
-         top: 180px;
-         width: 70px;
-         height: 70px;
-         border-radius: 50%;
-         overflow: hidden;
-         border: 1px solid #1245ee;
-         box-shadow: 0 0 0 4px #222,0 0 0 6px #fff;
-         transform: rotate(calc(360deg/4 * var(--i)));
-         transform-origin: 45vh;
-     }
-
-    .stack .imgBx:hover{
-        width: 90px;
-        height: 90px;
-    }
-
-    .text-stack{
-        height: 40vh;
-        width: 60vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 
     /*Projects---------------------------------------------------------------------------------*/
 
@@ -1242,60 +1130,6 @@ body.light{
         background-size: cover;
         height: 250px;
         width: 100%;
-    }
-
-
-    /*Technical Skill-----------------------------------------------------------------------------*/
-
-    .container{
-        margin-top: 20px;
-        margin-bottom: 60px;
-        width: 100px;
-        height: 150px;
-    }
-
-    .stack{
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 40vh;
-        height: 40vh;
-        border-radius: 50%;
-        border: 1px solid white;
-    }
-
-    .stack .imgBx{
-        background-color: #ff0000;
-        position: absolute;
-        left: -30px;
-        top: 90px;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        overflow: hidden;
-        border: 1px solid #1245ee;
-        box-shadow: 0 0 0 4px #222,0 0 0 6px #fff;
-        transform: rotate(calc(360deg/4 * var(--i)));
-        transform-origin: 32vw;
-    }
-
-    .stack .imgBx:hover{
-        width: 70px;
-        height: 70px;
-    }
-
-    .text-stack{
-        height: 25vh;
-        width: 90vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .text-stack .sm{
-        width: 40px;
-        height: 40px;
     }
 
 

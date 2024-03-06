@@ -86,7 +86,7 @@ body.light{
 
 
 /*--Second-------------------------------------------------------------------------------*/
-.stressDucerSS{
+.webSite{
     padding: 0;
     margin: 0;
     width: 100vw;
@@ -105,13 +105,13 @@ body.light{
     font-size: 35px;
 }
 
-.stressDucer-main{
+.webSite-main{
     width: 100vw;
     height: auto;
     display: flex;
 }
 
-.stressDucer-text{
+.webSite-text{
     padding: 0;
     margin: 0;
     height: 80vh;
@@ -120,7 +120,7 @@ body.light{
     justify-content: center;
 }
 
-.stressDucer-intro{
+.webSite-intro{
     font-size: 25px;
 }
 
@@ -156,11 +156,11 @@ body.light{
         font-size: 20px;
     }
 
-    .stressDucer-intro{
+    .webSite-intro{
         font-size: 15px;
     }
 
-    .stressDucer-text{
+    .webSite-text{
         padding: 20px;
         margin: 0;
         height: auto;
@@ -202,11 +202,11 @@ body.light{
         font-size: 15px;
     }
 
-    .stressDucer-intro{
+    .webSite-intro{
         font-size: 10px;
     }
 
-    .stressDucer-text{
+    .webSite-text{
         padding: 20px;
         margin: 0;
         height: auto;

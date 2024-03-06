@@ -84,8 +84,8 @@ body.light{
 
 
 /*--First-project-------------------------------------------------------------------------------*/
-.stressDucerSS{
-    padding: 0;
+.webApp{
+    padding-left: 10px;
     margin: 0;
     width: 100vw;
     height: auto;
@@ -103,13 +103,13 @@ body.light{
     font-size: 35px;
 }
 
-.stressDucer-main{
+.webApp-main{
     width: 100vw;
     height: auto;
     display: flex;
 }
 
-.stressDucer-text{
+.webApp-text{
     padding: 0;
     margin: 0;
     height: 80vh;
@@ -118,7 +118,7 @@ body.light{
     justify-content: center;
 }
 
-.stressDucer-intro{
+.webApp-intro{
     font-size: 25px;
 }
 
@@ -130,16 +130,41 @@ body.light{
 }
 
 .carousel-inner img{
-    width: auto;
-    height: 60vh;
+    width: 80%;
+    height: auto;
 }
 
 .Hometxt{
     font-size: 18px;
 }
 
+/*--Second-project-------------------------------------------------------------------------------*/
+
+.chatappimgslider{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chatapp-text{
+    padding: 0;
+    margin: 0;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 @media (max-width: 768px) {
+
+    .webApp{
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        height: auto;
+    }
+
     .main-title p{
         font-size: 30px;
     }
@@ -149,11 +174,11 @@ body.light{
         font-size: 15px;
     }
 
-    .stressDucer-intro{
+    .webApp-intro{
         font-size: 15px;
     }
 
-    .stressDucer-text{
+    .webApp-text{
         padding: 20px;
         margin: 0;
         height: auto;
@@ -163,16 +188,17 @@ body.light{
     }
 
     .imgslider{
-        height: 70vh;
+        height: 40vh;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-bottom: 50px;
     }
 
 
     .carousel-inner img{
-        width: auto;
-        height: 60vh;
+        width: 80vw;
+        height: auto;
     }
 
 
@@ -181,6 +207,14 @@ body.light{
 
 
 @media (max-width: 480px) {
+
+    .webApp{
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        height: auto;
+    }
+
     .main-title p{
         font-size: 22px;
     }
@@ -190,13 +224,13 @@ body.light{
         font-size: 15px;
     }
 
-    .stressDucer-intro{
+    .webApp-intro{
         font-size: 10px;
     }
 
-    .stressDucer-text{
+    .webApp-text{
+        margin-top: 50px;
         padding: 20px;
-        margin: 0;
         height: auto;
         display: flex;
         align-items: center;
@@ -204,18 +238,36 @@ body.light{
     }
 
     .imgslider{
-        height: 50vh;
+        margin-top: 50px;
+        margin-bottom: 20px;
         display: flex;
+        height: 20vh;
         align-items: center;
         justify-content: center;
     }
 
 
     .carousel-inner img{
-        width: auto;
-        height: 40vh;
+        width: 80vw;
+        height: auto;
     }
 
+    @media (max-width: 310px) {
 
+        .webApp{
+            padding: 0;
+            margin: 0;
+            width: 100vw;
+            height: auto;
+        }
+
+        .imgslider{
+            margin-bottom: 20px;
+            display: flex;
+            height: 10vh;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 
 }
