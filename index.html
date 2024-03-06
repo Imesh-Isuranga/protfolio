@@ -163,7 +163,7 @@
 </div>>
 
 <!-partial:index.partial.html -->
-<div id="wrapper">
+<div id="wrapper" style="padding: 100px">
     <div id="container">
 
         <ol class="organizational-chart">
@@ -180,27 +180,31 @@
                             <li>
                                 <div onmouseover="changeStack(1)">
                                     <h3>HTML</h3>
-                                    <img class="text-stack d-none" src="assets/Stack/Frontend/html.png" alt="">
+                                    <img src="assets/Stack/Frontend/html.png" alt="">
                                 </div>
                             </li>
                             <li>
                                 <div>
                                     <h3>CSS</h3>
+                                    <img src="assets/Stack/Frontend/Css.png" alt="">
                                 </div>
                             </li>
                             <li>
                                 <div>
                                     <h3>JavaScript</h3>
+                                    <img src="assets/Stack/Frontend/js.png" alt="">
                                 </div>
                             </li>
                             <li>
                                 <div>
                                     <h3>Angular</h3>
+                                    <img src="assets/Stack/Frontend/angular.png" alt="">
                                 </div>
                             </li>
                             <li>
                                 <div>
                                     <h3>Bootstrap</h3>
+                                    <img src="assets/Stack/Frontend/bootstrap.png" alt="">
                                 </div>
                             </li>
 
@@ -214,11 +218,13 @@
                             <li>
                                 <div>
                                     <h3>SpringBoot</h3>
+                                    <img src="assets/Stack/Backend/spring.png" alt="">
                                 </div>
                             </li>
                             <li>
                                 <div>
                                     <h3>Nodejs</h3>
+                                    <img src="assets/Stack/Backend/node.png" alt="">
                                 </div>
                             </li>
                         </ol>
@@ -231,16 +237,19 @@
                             <li>
                                 <div>
                                     <h3>MySQL</h3>
+                                    <img src="assets/Stack/Database/mysql.png" alt="">
                                 </div>
                             </li>
                             <li>
                                 <div>
                                     <h3>Firebase</h3>
+                                    <img src="assets/Stack/Database/firebase.png" alt="">
                                 </div>
                             </li>
                             <li>
                                 <div>
-                                    <h3>Nodejs</h3>
+                                    <h3>MongoDB</h3>
+                                    <img src="assets/Stack/Database/mongodb.png" alt="">
                                 </div>
                             </li>
                         </ol>
@@ -253,11 +262,13 @@
                             <li>
                                 <div>
                                     <h3>Flutter</h3>
+                                    <img src="assets/Stack/Mobile/flutter.png" alt="">
                                 </div>
                             </li>
                             <li>
                                 <div>
                                     <h3>Android</h3>
+                                    <img src="assets/Stack/Mobile/android.png" alt="">
                                 </div>
                             </li>
                         </ol>
@@ -540,52 +551,6 @@
     })
 </script>
 
-
-<!--Skills--------------------------------------------------->
-<script type="text/javascript">
-    function changeStack(index){
-        var revealProducts = document.querySelectorAll('.text-stack');
-        if(index == 1){
-            console.log("qqqqqqqqqqqqqqqqqqqqqq")
-            revealProducts[0].classList.remove('d-none')
-        }else if(index == 2){
-            revealProducts[0].classList.add('d-none')
-        }else if(index == 3){
-            revealProducts[0].classList.add('d-none')
-        }else{
-            revealProducts[0].classList.add('d-none')
-            revealProducts[1].classList.add('d-none')
-            revealProducts[2].classList.add('d-none')
-            revealProducts[3].classList.remove('d-none')
-        }
-
-        function changeStackOut(index){
-            var revealProducts = document.querySelectorAll('.text-stack');
-            if(index == 1){
-                revealProducts[0].classList.add('d-none')
-                console.log("sssssssssssssssssssssssssssssssssssssssss")
-                revealProducts[1].classList.add('d-none')
-                revealProducts[2].classList.add('d-none')
-                revealProducts[3].classList.add('d-none')
-            }else if(index == 2){
-                revealProducts[0].classList.add('d-none')
-                revealProducts[1].classList.remove('d-none')
-                revealProducts[2].classList.add('d-none')
-                revealProducts[3].classList.add('d-none')
-            }else if(index == 3){
-                revealProducts[0].classList.add('d-none')
-                revealProducts[1].classList.add('d-none')
-                revealProducts[2].classList.remove('d-none')
-                revealProducts[3].classList.add('d-none')
-            }else{
-                revealProducts[0].classList.add('d-none')
-                revealProducts[1].classList.add('d-none')
-                revealProducts[2].classList.add('d-none')
-                revealProducts[3].classList.remove('d-none')
-            }
-    }}
-
-</script>
 
 <script type="text/javascript">
     window.addEventListener("scroll",reveal);
